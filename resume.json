@@ -1,0 +1,183 @@
+{
+  "basics": {
+    "name": "Philippe David",
+    "label": "Software Engineer",
+    "picture": "https://lh6.googleusercontent.com/-Q3K0NGgKXFU/VC6yGSsch8I/AAAAAAAAN_I/oPmdWpbgz4E/w1114-h743-no/LOG_Philippe_David_%28MG_8717%29_E_002.jpg",
+    "email": "philippe.david0@gmail.com",
+    "phone": "+1(450) 518-4231",
+    "website": "http://pdavid0.github.io",
+    "summary": "",
+    "location": {
+      "address": "1312 rue Baudry",
+      "postalCode": "H2L 3E4",
+      "city": "Montreal",
+      "countryCode": "CA",
+      "region": "Quebec"
+    },
+    "profiles": [{
+      "network": "github",
+      "username": "pdavid0",
+      "url": "http://github.com/"
+    },{
+      "network": "linkedin",
+      "username": "philippe-david",
+      "url": "https://www.linkedin.com/pub/philippe-david/24/8b9/4ab"
+    }
+    ]
+  },
+  "work": [{
+      "company": "Wherecloud Inc",
+      "position": "Senior Android Developer",
+      "website": "http://wherecloud.com",
+      "startDate": "2014-06-16",
+      "endDate": "2015-01-01",
+      "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
+      "highlights": [
+        "Create new Android Apps.",
+        "Lead an intern and guide him through his Internship in mobile Development",
+        "Maintain and update Android Apps on the Google Play Store.",
+        "Maintain and update Web Apps."
+      ]
+    },
+    {
+      "company": "Solutions Medias 360",
+      "position": "Mobile Developer",
+      "website": "http://www.solutionsmedias360.com/",
+      "startDate": "2013-05-01",
+      "endDate": "2013-09-01",
+      "summary": "The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.",
+      "highlights": [
+        "Participate in the creation new Android Apps.",
+        "Write test suite for cloud services",
+        "Maintain and update Android Apps on the Google Play Store.",
+        "Maintain and update Web Apps."
+      ]
+    },
+    {
+      "company": "Quattriuum",
+      "position": "Mobile Developer",
+      "website": "http://www.Quattriuum.com/",
+      "startDate": "2012-05-01",
+      "endDate": "2013-05-01",
+      "summary": "Quattriuum specializes in motion tracking and analysis.",
+      "highlights": [
+        "Participate in the creation of the FWD Powershot, to measure hockyers performance.",
+        "Create software to record, visualize and extract raw sensor data.",
+        "Integrate cloud technologies and services",
+        "Android bluetooth communication",
+        "Provide tech. support for new prototypes",
+        "Create software documentation"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Firefox Montreal",
+      "position": "Speaker",
+      "website": "https://reps.mozilla.org/e/firefox-os-app-day-montreal-2013/",
+      "startDate": "2013-05-08",
+      "endDate": "2013-05-25",
+      "summary": "Organise, present and promote the new OS at Firefox OS MTL Hackaton."
+    },
+    {
+      "organization": "ApplETS, mobile engineering",
+      "position": "President",
+      "website": "http://clubapplets.ca/",
+      "startDate": "2013-05-08",
+      "endDate": "2014-05-25",
+      "summary": "Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms."
+    },
+    {
+      "organization": "CS Games",
+      "position": "VP Promo",
+      "website": "http://csgames.org/",
+      "startDate": "2014-01-01",
+      "endDate": "2013-03-23",
+      "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges."
+    }
+  ],
+  "education": [
+    {
+      "institution": "School of Superior Technology",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2010-09-01",
+      "endDate": "2014-05-20"
+    },{
+      "institution": "Cegep de St-Hyacinthe",
+      "area": "Information Systems",
+      "studyType": "Collegiate",
+      "startDate": "2006-09-01",
+      "endDate": "2010-09-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "2nd Place, Coveo Blitz 2014",
+      "date": "2014-01-01",
+      "awarder": "Coveo Inc",
+      "summary": "24h Developer Contest."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "NodeJS",
+        "Python",
+        "Heroku",
+        "AWS",
+        "Firebase",
+        "Angular JS",
+		"YeomanIO",
+		"Bower"
+      ]
+    },
+    {
+      "name": "Android",
+      "level": "Master",
+      "keywords": [
+        "Java 1.7",
+        "Android Studio",
+        "Gennymotion",
+        "Google Glass",
+        "Android Wear",
+        "Android TV",
+        "Google I/O 2014"
+      ]
+    },
+    {
+      "name": "iOS",
+      "level": "Nooby",
+      "keywords": [
+        "Willing to learn",
+		"Swift"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Shy but fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Langue maternelle"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Internet",
+      "keywords": [
+        "Cats",
+        "Gifs of cats"
+      ]
+    }
+  ],
+  "references": [
+  ]
+}
