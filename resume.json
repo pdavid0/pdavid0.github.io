@@ -2,11 +2,11 @@
   "basics": {
     "name": "Philippe David",
     "label": "Software Engineer",
-    "picture": "https://lh6.googleusercontent.com/-Q3K0NGgKXFU/VC6yGSsch8I/AAAAAAAAN_I/oPmdWpbgz4E/w1114-h743-no/LOG_Philippe_David_%28MG_8717%29_E_002.jpg",
+    "picture": "http://www.gravatar.com/avatar/7cc225f1e34755c9cf6a2b1fb7b463c9?s=100&r=pg&d=mm",
     "email": "philippe.david0@gmail.com",
     "phone": "+1(450) 518-4231",
     "website": "http://pdavid0.github.io",
-    "summary": "",
+    "summary": "Curieux, Ingénieux, Créatif, Rêveur.",
     "location": {
       "address": "1312 rue Baudry",
       "postalCode": "H2L 3E4",
@@ -17,7 +17,7 @@
     "profiles": [{
       "network": "github",
       "username": "pdavid0",
-      "url": "http://github.com/"
+      "url": "http://github.com/pdavid0"
     },{
       "network": "linkedin",
       "username": "philippe-david",
@@ -30,11 +30,15 @@
       "position": "Senior Android Developer",
       "website": "http://wherecloud.com",
       "startDate": "2014-06-16",
-      "endDate": "2015-01-01",
+      "endDate": "2015-04-01",
       "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
       "highlights": [
-        "Create new Android Apps.",
-        "Lead an intern and guide him through his Internship in mobile Development",
+        "Participate in team meetings to oversee the advancement of projects",
+		"Review, prioritize and execute development tasks in an independent manner",
+		"Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+		"Implement mobile application solutions",
+		"Working with designers and account managers on a variety of projects",
+		"Provide on-site support for clients.",
         "Maintain and update Android Apps on the Google Play Store.",
         "Maintain and update Web Apps."
       ]
@@ -48,7 +52,7 @@
       "summary": "The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.",
       "highlights": [
         "Participate in the creation new Android Apps.",
-        "Write test suite for cloud services",
+        "Write test for web services",
         "Maintain and update Android Apps on the Google Play Store.",
         "Maintain and update Web Apps."
       ]
@@ -114,9 +118,15 @@
   "awards": [
     {
       "title": "2nd Place, Coveo Blitz 2014",
-      "date": "2014-01-01",
+      "date": "2014-01-11",
       "awarder": "Coveo Inc",
       "summary": "24h Developer Contest."
+    },
+    {
+      "title": "5th Place, CS Games 2013",
+      "date": "2013-03-23",
+      "awarder": "CS Games",
+      "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing."
     }
   ],
   "skills": [
@@ -125,15 +135,13 @@
       "level": "Master",
       "keywords": [
         "HTML5",
-        "CSS3",
         "Javascript",
         "NodeJS",
         "Python",
         "Heroku",
         "AWS",
+        "Cloud Services",
         "Firebase",
-        "Angular JS",
-		"YeomanIO",
 		"Bower"
       ]
     },
@@ -168,16 +176,5 @@
       "language": "French",
       "fluency": "Langue maternelle"
     }
-  ],
-  "interests": [
-    {
-      "name": "Internet",
-      "keywords": [
-        "Cats",
-        "Gifs of cats"
-      ]
-    }
-  ],
-  "references": [
   ]
 }

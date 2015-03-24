@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Philippe David</title>
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <style>
-            .clear-margin {
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Philippe David</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- link rel="shortcut icon" href="favicon.ico" / -->
+    <style>
+      .relative {
+  position: relative;
+}
+.clear-margin {
   margin: 0;
 }
 .space-top {
   margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
 }
 .icon-left {
   margin-right: 5px;
@@ -22,6 +29,7 @@
 }
 .labels {
   word-spacing: 5px;
+  line-height: 2;
 }
 .label-keyword {
   display: inline-block;
@@ -30,6 +38,20 @@
   font-size: 0.9em;
   padding: 5px;
   border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+.clear-margin {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
 }
 body {
   font-family: 'Lato';
@@ -51,11 +73,29 @@ body {
   margin-bottom: 10px;
   border-width: 1px 0 0 0;
 }
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+.card-nested:after {
+  clear: both;
+}
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
 .background-card {
   padding: 10px 20px;
 }
 .card-wrapper {
   padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
 }
 .text-bolder {
   font-weight: bold;
@@ -76,10 +116,40 @@ body {
 .background-details .detail .icon {
   color: #707070;
 }
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
 .background-details .detail .icon,
 .background-details .detail .info {
   display: table-cell;
   padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
 }
 .info .content.has-sidebar {
   width: 80%;
@@ -88,13 +158,161 @@ body {
   padding: 0 10px;
   border-right: 1px solid #cdcdcd;
 }
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
 .info .sidebar {
   margin-left: 80%;
   box-sizing: border-box;
   padding: 10px;
 }
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+.current-event {
+  font-size: 8px;
+  color: #5ACE24;
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  left: -10px;
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.floating-nav-trigger .close-icon {
+  display: none;
+}
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
+  text-decoration: none;
+}
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
+}
+.floating-nav-trigger.is-open .fa-bars {
+  display: none;
+}
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
+}
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
+}
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li i.fa {
+  margin-right: 10px;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
 .profile-pic {
   padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
+  }
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
 }
 .contact-details .detail {
   display: table;
@@ -104,6 +322,11 @@ body {
   padding: 0 10px;
   color: #707070;
 }
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
 .contact-details .detail .info {
   font-size: 0.8em;
 }
@@ -112,8 +335,42 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
 .social-link {
   margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
 }
 .social-link:first-child {
   margin-left: 0;
@@ -124,32 +381,178 @@ body {
 .link-github {
   color: #454545;
 }
-.link-github:hover {
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
   color: #2b2b2b;
 }
 .link-twitter {
   color: #33ccff;
 }
-.link-twitter:hover {
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
   color: #00bfff;
 }
 .link-blog {
   color: #f36f24;
 }
-.link-blog:hover {
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
   color: #d8560c;
 }
 .link-linkedin {
   color: #007bb6;
 }
-.link-linkedin:hover {
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
   color: #005983;
 }
 .link-skype {
   color: #12a5f4;
 }
-.link-skype:hover {
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
   color: #0986ca;
+}
+.link-stackoverflow {
+  color: #8e8e92;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-googleplus {
+  color: #dd4b39;
+}
+.link-googleplus:hover,
+.link-googleplus:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-youtube {
+  color: #dd4b39;
+}
+.link-youtube:hover,
+.link-youtube:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-gratipay {
+  color: #663300;
+}
+.link-gratipay:hover,
+.link-gratipay:focus {
+  text-decoration: none;
+  color: #331a00;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-tumblr {
+  color: #2d4661;
+}
+.link-tumblr:hover,
+.link-tumblr:focus {
+  text-decoration: none;
+  color: #1d2d3e;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: #000000;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
 }
 .card-skills {
   position: relative;
@@ -189,486 +592,572 @@ body {
 .skill-info {
   margin-left: 10px;
 }
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
 
-        </style>
-    </head>
+    </style>
+  </head>
 
-    <body>
-        <script>
-            window.onload = function () {
-                $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
-                $( ".js-tooltip" ).tooltip();
-            }
-        </script>
-        <div class="container-fluid">
-            <div class="row main clearfix">
-                <section class="col-md-3 card-wrapper affix">
-                    <div class="card profile-card">
-                        <div class="profile-pic">
-                            <img class="media-object img-circle center-block"  data-src="holder.js/64x64"
-                                alt="64x64" src="http://www.gravatar.com/avatar/7cc225f1e34755c9cf6a2b1fb7b463c9?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px;">
+  <body itemscope itemtype="http://schema.org/Person">
+    <script>
+      window.onload = function () {
+        var toggleFloatingMenu = function() {
+          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+        };
+
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( "[rel=tooltip]" ).tooltip();
+        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+          e.preventDefault();
+          toggleFloatingMenu();
+        });
+        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+      }
+    </script>
+    <div class="container-fluid">
+      <div class="row main clearfix">
+        <a href="#" class="js-floating-nav-trigger floating-nav-trigger">
+          <i class="fa fa-bars"></i>
+          <span class="close-icon">&times;</span>
+        </a>
+        <nav class="floating-nav js-floating-nav">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#about">
+                <i class="fa fa-user"></i>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#work-experience">
+                <i class="fa fa-building"></i>
+                Work Experience
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <i class="fa fa-code"></i>
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#education">
+                <i class="fa fa-mortar-board"></i>
+                Education
+              </a>
+            </li>
+              <li>
+                <a href="#awards">
+                  <i class="fa fa-trophy"></i>
+                  Awards
+                </a>
+              </li>
+              <li>
+                <a href="#volunteer-work">
+                  <i class="fa fa-child"></i>
+                  Volunteer Work
+                </a>
+              </li>
+          </ul>
+        </nav>
+
+        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+          <div class="card profile-card">
+              <span class="profile-pic-container">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Philippe David" src="http://www.gravatar.com/avatar/7cc225f1e34755c9cf6a2b1fb7b463c9?s=100&amp;r=pg&amp;d=mm" itemprop="image">
+                </div>
+
+                <div class="name-and-profession">
+                  <h3 class="text-center text-bolder name" itemprop="name"> Philippe David</h3>
+                  <h5 class="text-muted text-center" itemprop="jobTitle">Software Engineer</h5>
+                </div>
+              </span>
+              <hr>
+
+              <div class="contact-details clearfix">
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-location-arrow"></i>
+                    </span>
+
+                      <span class="info">
+                        Montreal, Quebec,
+                        CA
+                      </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-phone"></i>
+                    </span>
+
+                    <span class="info" itemprop="telephone">
+                      +1(450) 518-4231
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon">
+                      <i class="fa fa-lg fa-envelope"></i>
+                    </span>
+
+                    <span class="info">
+                      <a href="/cdn-cgi/l/email-protection#07776f6e6b6e777762296366716e633747606a666e6b2964686a" class="link-disguise" itemprop="email"><span class="__cf_email__" data-cfemail="57273f3e3b3e272732793336213e336717303a363e3b7934383a">[email&#160;protected]</span><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></a>
+                    </span>
+                  </div>
+
+                  <div class="detail">
+                    <span class="icon" title="Languages I speak">
+                      <i class="fa fa-lg fa-language"></i>
+                    </span>
+
+                    <span class="info">
+                      English, French
+                    </span>
+                  </div>
+              </div>
+
+              <hr>
+
+              <div class="social-links text-center">
+                  <a class="fa fa-linkedin fa-2x social-link link-linkedin"
+                       href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab" target="_blank"></a>
+                  <a class="fa fa-github fa-2x social-link link-github"
+                       href="//github.com/pdavid0" target="_blank"></a>
+                  <a class="fa fa-rss fa-2x social-link link-blog"
+                       href="http://pdavid0.github.io" target="_blank"></a>
+              </div>
+          </div>
+        </section>
+
+        <section class="col-md-9 card-wrapper pull-right">
+          <div class="card background-card">
+            <h4 class="text-uppercase text-bolder">Background</h4>
+            <hr>
+
+            <div class="background-details">
+              <div class="detail" id="about">
+                <div class="icon">
+                  <i class="fa fa-lg fa-user"></i>
+                  <span class="mobile-title">About</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    About
+                  </h4>
+
+                  <div class="content" itemprop="description">
+                    Curieux, Ingénieux, Créatif, Rêveur.
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="work-experience">
+                <div class="icon">
+                  <i class="fa fa-lg fa-building"></i>
+                  <span class="mobile-title">Work Experience</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Work Experience
+                  </h4>
+
+                  <ul class="list-unstyled">
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Senior Android Developer</strong>,&nbsp;
+                              <a href="http://wherecloud.com"  target="_blank">Wherecloud Inc</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                Jun, 2014 -
+                                  Apr, 2015
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  9 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
+                            <ul>
+                                <li> Participate in team meetings to oversee the advancement of projects </li>
+                                <li> Review, prioritize and execute development tasks in an independent manner </li>
+                                <li> Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise </li>
+                                <li> Implement mobile application solutions </li>
+                                <li> Working with designers and account managers on a variety of projects </li>
+                                <li> Provide on-site support for clients. </li>
+                                <li> Maintain and update Android Apps on the Google Play Store. </li>
+                                <li> Maintain and update Web Apps. </li>
+                            </ul>
                         </div>
-                            <h3 class="text-center text-bolder"> Philippe David</h3>
-                            <h5 class="text-muted text-center">Software Engineer</h5>
-                            <hr>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Mobile Developer</strong>,&nbsp;
+                              <a href="http://www.solutionsmedias360.com/"  target="_blank">Solutions Medias 360</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                May, 2013 -
+                                  Sep, 2013
+                              </span>
 
-                            <div class="contact-details clearfix">
-
-                                    <div class="detail">
-                                        <span class="icon">
-                                            <i class="fa fa-lg fa-location-arrow"></i>
-                                        </span>
-
-                                            <span class="info">
-                                                Montreal, Quebec,
-                                                CA
-                                            </span>
-                                    </div>
-
-                                    <div class="detail">
-                                        <span class="icon">
-                                            <i class="fa fa-lg fa-phone"></i>
-                                        </span>
-
-                                        <span class="info">
-                                            +1(450) 518-4231
-                                        </span>
-                                    </div>
-
-                                    <div class="detail">
-                                        <span class="icon">
-                                            <i class="fa fa-lg fa-envelope"></i>
-                                        </span>
-
-                                        <span class="info">
-                                            philippe.david0@gmail.com
-                                        </span>
-                                    </div>
-
-                                    <div class="detail">
-                                        <span class="icon" title="Languages I speak">
-                                            <i class="fa fa-lg fa-language"></i>
-                                        </span>
-
-                                        <span class="info">
-                                            English, French
-                                        </span>
-                                    </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="social-links text-center">
-                                    <a class="fa fa-linkedin fa-2x social-link link-linkedin"
-                                           href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab" target="_blank"></a>
-                                    <a class="fa fa-github fa-2x social-link link-github"
-                                           href="http://www.github.com/pdavid0" target="_blank"></a>
-                                    <a class="fa fa-rss fa-2x social-link link-blog"
-                                           href="http://pdavid0.github.io" target="_blank"></a>
-                            </div>
-                    </div>
-                </section>
-
-                <section class="col-md-9 card-wrapper pull-right">
-                    <div class="card background-card">
-                        <h4 class="text-uppercase text-bolder">Background</h4>
-                        <hr>
-
-                        <div class="background-details">
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-user"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        About
-                                    </h4>
-
-                                    <div class="content">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-building"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        Work Experience
-                                    </h4>
-
-                                    <ul class="list-unstyled">
-                                            <li class="card card-nested clearfix">
-                                                <div class="content has-sidebar">
-                                                    <p><strong>Senior Android Developer</strong>,&nbsp;Wherecloud Inc</p>
-                                                    <p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
-                                                        <ul>
-                                                                <li> Create new Android Apps. </li>
-                                                                <li> Lead an intern and guide him through his Internship in mobile Development </li>
-                                                                <li> Maintain and update Android Apps on the Google Play Store. </li>
-                                                                <li> Maintain and update Web Apps. </li>
-                                                        </ul>
-                                                </div>
-
-                                                <div class="sidebar text-muted text-center">
-                                                    <p>
-                                                        <strong>Joined:</strong>&nbsp;
-                                                        Jun, 2014
-                                                    </p>
-                                                    <p>
-                                                            <strong>Left:</strong>&nbsp;
-                                                            Dec, 2014
-                                                    </p>
-                                                    <p>
-                                                        <i class="fa fa-clock-o icon-left"></i>
-                                                        6 months
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="card card-nested clearfix">
-                                                <div class="content has-sidebar">
-                                                    <p><strong>Mobile Developer</strong>,&nbsp;Solutions Medias 360</p>
-                                                    <p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
-                                                        <ul>
-                                                                <li> Participate in the creation new Android Apps. </li>
-                                                                <li> Write test suite for cloud services </li>
-                                                                <li> Maintain and update Android Apps on the Google Play Store. </li>
-                                                                <li> Maintain and update Web Apps. </li>
-                                                        </ul>
-                                                </div>
-
-                                                <div class="sidebar text-muted text-center">
-                                                    <p>
-                                                        <strong>Joined:</strong>&nbsp;
-                                                        Apr, 2013
-                                                    </p>
-                                                    <p>
-                                                            <strong>Left:</strong>&nbsp;
-                                                            Aug, 2013
-                                                    </p>
-                                                    <p>
-                                                        <i class="fa fa-clock-o icon-left"></i>
-                                                        4 months
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="card card-nested clearfix">
-                                                <div class="content has-sidebar">
-                                                    <p><strong>Mobile Developer</strong>,&nbsp;Quattriuum</p>
-                                                    <p>Quattriuum specializes in motion tracking and analysis.</p>
-                                                        <ul>
-                                                                <li> Participate in the creation of the FWD Powershot, to measure hockyers performance. </li>
-                                                                <li> Create software to record, visualize and extract raw sensor data. </li>
-                                                                <li> Integrate cloud technologies and services </li>
-                                                                <li> Android bluetooth communication </li>
-                                                                <li> Provide tech. support for new prototypes </li>
-                                                                <li> Create software documentation </li>
-                                                        </ul>
-                                                </div>
-
-                                                <div class="sidebar text-muted text-center">
-                                                    <p>
-                                                        <strong>Joined:</strong>&nbsp;
-                                                        Apr, 2012
-                                                    </p>
-                                                    <p>
-                                                            <strong>Left:</strong>&nbsp;
-                                                            Apr, 2013
-                                                    </p>
-                                                    <p>
-                                                        <i class="fa fa-clock-o icon-left"></i>
-                                                        1 year
-                                                    </p>
-                                                </div>
-                                            </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-code"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        Skills
-                                    </h4>
-
-                                    <div class="content">
-                                        <ul class="list-unstyled">
-                                                <li class="card card-nested card-skills">
-                                                        <div class="skill-level js-tooltip" title="Master" data-placement="left">
-                                                            <div class="skill-progress master">
-                                                            </div>
-                                                        </div>
-                                                    <div class="skill-info">
-                                                        <strong>Web Development</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">HTML5</span>
-                                                                <span class="label label-keyword">CSS3</span>
-                                                                <span class="label label-keyword">Javascript</span>
-                                                                <span class="label label-keyword">NodeJS</span>
-                                                                <span class="label label-keyword">Python</span>
-                                                                <span class="label label-keyword">Heroku</span>
-                                                                <span class="label label-keyword">AWS</span>
-                                                                <span class="label label-keyword">Firebase</span>
-                                                                <span class="label label-keyword">Angular JS</span>
-                                                                <span class="label label-keyword">YeomanIO</span>
-                                                                <span class="label label-keyword">Bower</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested card-skills">
-                                                        <div class="skill-level js-tooltip" title="Master" data-placement="left">
-                                                            <div class="skill-progress master">
-                                                            </div>
-                                                        </div>
-                                                    <div class="skill-info">
-                                                        <strong>Android</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Java 1.7</span>
-                                                                <span class="label label-keyword">Android Studio</span>
-                                                                <span class="label label-keyword">Gennymotion</span>
-                                                                <span class="label label-keyword">Google Glass</span>
-                                                                <span class="label label-keyword">Android Wear</span>
-                                                                <span class="label label-keyword">Android TV</span>
-                                                                <span class="label label-keyword">Google I/O 2014</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested card-skills">
-                                                    <div class="skill-info">
-                                                        <strong>iOS</strong>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Willing to learn</span>
-                                                                <span class="label label-keyword">Swift</span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="detail">
-                                <div class="icon">
-                                    <i class="fa fa-lg fa-mortar-board"></i>
-                                </div>
-                                <div class="info">
-                                    <h4 class="title text-uppercase">
-                                        Education
-                                    </h4>
-
-                                    <div class="content">
-                                        <ul class="list-unstyled">
-                                                <li class="card card-nested">
-                                                    <div class="content has-sidebar">
-                                                        <p>
-                                                            <strong>Software Engineering, Bachelor</strong>,&nbsp;
-                                                            School of Superior Technology
-                                                        </p>
-                                                        <i></i>
-                                                        <div class="space-top labels">
-                                                        </div>
-                                                    </div>
-                                                    <div class="sidebar text-muted text-center">
-                                                        <p>
-                                                            <strong>Started:</strong>&nbsp;
-                                                            Aug, 2010
-                                                        </p>
-                                                        <p>
-                                                                <strong>Completion:</strong>&nbsp;
-                                                                May, 2014
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li class="card card-nested">
-                                                    <div class="content has-sidebar">
-                                                        <p>
-                                                            <strong>Information Systems, Collegiate</strong>,&nbsp;
-                                                            Cegep de St-Hyacinthe
-                                                        </p>
-                                                        <i></i>
-                                                        <div class="space-top labels">
-                                                        </div>
-                                                    </div>
-                                                    <div class="sidebar text-muted text-center">
-                                                        <p>
-                                                            <strong>Started:</strong>&nbsp;
-                                                            Aug, 2006
-                                                        </p>
-                                                        <p>
-                                                                <strong>Completion:</strong>&nbsp;
-                                                                Aug, 2010
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                                <div class="detail">
-                                    <div class="icon">
-                                        <i class="fa fa-lg fa-trophy"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="title text-uppercase">
-                                            Awards
-                                        </h4>
-
-                                        <div class="content">
-                                            <ul class="list-unstyled">
-                                                    <li class="card card-nested">
-                                                        <div class="content has-sidebar">
-                                                            <p>
-                                                                <strong>2nd Place, Coveo Blitz 2014</strong>,&nbsp;
-                                                                Coveo Inc
-                                                            </p>
-                                                            <p class="clear-margin"> 24h Developer Contest. </p>
-                                                        </div>
-                                                        <div class="sidebar text-muted text-center">
-                                                            <p>
-                                                                <strong>Awarded on:</strong>&nbsp;
-                                                                Dec 31, 2013
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="detail">
-                                    <div class="icon">
-                                        <i class="fa fa-lg fa-child"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="title text-uppercase">
-                                            Volunteer Work
-                                        </h4>
-
-                                        <div class="content">
-                                            <ul class="list-unstyled">
-                                                    <li class="card card-nested">
-                                                        <div class="content has-sidebar">
-                                                            <p>
-                                                                <strong>Speaker</strong>,&nbsp;
-                                                                Firefox Montreal
-                                                            </p>
-                                                            <p>Organise, present and promote the new OS at Firefox OS MTL Hackaton.</p>
-                                                            <ul>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sidebar text-muted text-center">
-                                                            <p>
-                                                                <strong>Since:</strong>&nbsp;
-                                                                May, 2013
-                                                            </p>
-                                                            <p>
-                                                                    <strong>Until:</strong>&nbsp;
-                                                                    May, 2013
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="card card-nested">
-                                                        <div class="content has-sidebar">
-                                                            <p>
-                                                                <strong>President</strong>,&nbsp;
-                                                                ApplETS, mobile engineering
-                                                            </p>
-                                                            <p>Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms.</p>
-                                                            <ul>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sidebar text-muted text-center">
-                                                            <p>
-                                                                <strong>Since:</strong>&nbsp;
-                                                                May, 2013
-                                                            </p>
-                                                            <p>
-                                                                    <strong>Until:</strong>&nbsp;
-                                                                    May, 2014
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                                    <li class="card card-nested">
-                                                        <div class="content has-sidebar">
-                                                            <p>
-                                                                <strong>VP Promo</strong>,&nbsp;
-                                                                CS Games
-                                                            </p>
-                                                            <p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
-                                                            <ul>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="sidebar text-muted text-center">
-                                                            <p>
-                                                                <strong>Since:</strong>&nbsp;
-                                                                Dec, 2013
-                                                            </p>
-                                                            <p>
-                                                                    <strong>Until:</strong>&nbsp;
-                                                                    Mar, 2013
-                                                            </p>
-                                                        </div>
-                                                    </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="detail">
-                                    <div class="icon">
-                                        <i class="fa fa-lg fa-heart"></i>
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="title text-uppercase">
-                                            Interests
-                                        </h4>
-
-                                        <div class="content">
-                                            <ul class="list-unstyled">
-                                                    <li class="card card-nested">
-                                                        <p>
-                                                            <strong>Internet</strong>
-                                                        </p>
-
-                                                        <div class="space-top labels">
-                                                                <span class="label label-keyword">Cats</span>
-                                                                <span class="label label-keyword">Gifs of cats</span>
-                                                        </div>
-                                                    </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  4 months
+                                </span>
+                            </small>
+                          </p>
+                          <p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
+                            <ul>
+                                <li> Participate in the creation new Android Apps. </li>
+                                <li> Write test for web services </li>
+                                <li> Maintain and update Android Apps on the Google Play Store. </li>
+                                <li> Maintain and update Web Apps. </li>
+                            </ul>
                         </div>
+                      </li>
+                      <li class="card card-nested clearfix">
+                        <div class="content">
+                          <p class="clear-margin relative">
+                            <strong>Mobile Developer</strong>,&nbsp;
+                              <a href="http://www.Quattriuum.com/"  target="_blank">Quattriuum</a>
+                          </p>
+                          <p class="text-muted">
+                            <small>
+                              <span class="space-right">
+                                May, 2012 -
+                                  May, 2013
+                              </span>
+
+                                <span>
+                                  <i class="fa fa-clock-o icon-left"></i>
+                                  1 year
+                                </span>
+                            </small>
+                          </p>
+                          <p>Quattriuum specializes in motion tracking and analysis.</p>
+                            <ul>
+                                <li> Participate in the creation of the FWD Powershot, to measure hockyers performance. </li>
+                                <li> Create software to record, visualize and extract raw sensor data. </li>
+                                <li> Integrate cloud technologies and services </li>
+                                <li> Android bluetooth communication </li>
+                                <li> Provide tech. support for new prototypes </li>
+                                <li> Create software documentation </li>
+                            </ul>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="detail" id="skills">
+                <div class="icon">
+                  <i class="fa fa-lg fa-code"></i>
+                  <span class="mobile-title">Skills</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Skills
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Web Development</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">HTML5</span>
+                                <span class="label label-keyword">Javascript</span>
+                                <span class="label label-keyword">NodeJS</span>
+                                <span class="label label-keyword">Python</span>
+                                <span class="label label-keyword">Heroku</span>
+                                <span class="label label-keyword">AWS</span>
+                                <span class="label label-keyword">Cloud Services</span>
+                                <span class="label label-keyword">Firebase</span>
+                                <span class="label label-keyword">Bower</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                            <div class="skill-level" rel="tooltip" title="Master" data-placement="left">
+                              <div class="skill-progress master">
+                              </div>
+                            </div>
+                          <div class="skill-info">
+                            <strong>Android</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Java 1.7</span>
+                                <span class="label label-keyword">Android Studio</span>
+                                <span class="label label-keyword">Gennymotion</span>
+                                <span class="label label-keyword">Google Glass</span>
+                                <span class="label label-keyword">Android Wear</span>
+                                <span class="label label-keyword">Android TV</span>
+                                <span class="label label-keyword">Google I/O 2014</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested card-skills">
+                          <div class="skill-info">
+                            <strong>iOS</strong>
+
+                            <div class="space-top labels">
+                                <span class="label label-keyword">Willing to learn</span>
+                                <span class="label label-keyword">Swift</span>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="detail" id="education">
+                <div class="icon">
+                  <i class="fa fa-lg fa-mortar-board"></i>
+                  <span class="mobile-title">Education</span>
+                </div>
+                <div class="info">
+                  <h4 class="title text-uppercase">
+                    Education
+                  </h4>
+
+                  <div class="content">
+                    <ul class="list-unstyled">
+                        <li class="card card-nested">
+                          <div class="content">
+                            <p class="clear-margin relative">
+
+                              <strong>Software Engineering, Bachelor</strong>,&nbsp;
+                              School of Superior Technology
+                            </p>
+                            <p class="text-muted">
+                              <small>
+                                Sep, 2010 -
+                                  May, 2014
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                        </li>
+                        <li class="card card-nested">
+                          <div class="content">
+                            <p class="clear-margin relative">
+
+                              <strong>Information Systems, Collegiate</strong>,&nbsp;
+                              Cegep de St-Hyacinthe
+                            </p>
+                            <p class="text-muted">
+                              <small>
+                                Sep, 2006 -
+                                  Sep, 2010
+                              </small>
+                            </p>
+                            <i></i>
+                            <div class="space-top labels">
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+                <div class="detail" id="awards">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-trophy"></i>
+                    <span class="mobile-title">Awards</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Awards
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content">
+                              <p class="clear-margin" itemprop="award">
+                                <strong>2nd Place, Coveo Blitz 2014</strong>,&nbsp;
+                                Coveo Inc
+                              </p>
+                              <p class="text-muted">
+                                <small>
+                                  Awarded on: Jan 11, 2014
+                                </small>
+                              </p>
+                              <p class="clear-margin"> 24h Developer Contest. </p>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content">
+                              <p class="clear-margin" itemprop="award">
+                                <strong>5th Place, CS Games 2013</strong>,&nbsp;
+                                CS Games
+                              </p>
+                              <p class="text-muted">
+                                <small>
+                                  Awarded on: Mar 23, 2013
+                                </small>
+                              </p>
+                              <p class="clear-margin"> The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. </p>
+                            </div>
+                          </li>
+                      </ul>
                     </div>
-                </section>
+                  </div>
+                </div>
+
+                <div class="detail" id="volunteer-work">
+                  <div class="icon">
+                    <i class="fa fa-lg fa-child"></i>
+                    <span class="mobile-title">Volunteer Work</span>
+                  </div>
+                  <div class="info">
+                    <h4 class="title text-uppercase">
+                      Volunteer Work
+                    </h4>
+
+                    <div class="content">
+                      <ul class="list-unstyled">
+                          <li class="card card-nested">
+                            <div class="content">
+                              <p class="clear-margin relative">
+
+                                <strong>Speaker</strong>,&nbsp;
+                                  <a href="https://reps.mozilla.org/e/firefox-os-app-day-montreal-2013/"  target="_blank">Firefox Montreal</a>
+                              </p>
+                              <p class="text-muted">
+                                <small>
+                                  May, 2013 -
+                                    May, 2013
+                                </small>
+                              </p>
+                              <p>Organise, present and promote the new OS at Firefox OS MTL Hackaton.</p>
+                              <ul>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content">
+                              <p class="clear-margin relative">
+
+                                <strong>President</strong>,&nbsp;
+                                  <a href="http://clubapplets.ca/"  target="_blank">ApplETS, mobile engineering</a>
+                              </p>
+                              <p class="text-muted">
+                                <small>
+                                  May, 2013 -
+                                    May, 2014
+                                </small>
+                              </p>
+                              <p>Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms.</p>
+                              <ul>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="card card-nested">
+                            <div class="content">
+                              <p class="clear-margin relative">
+
+                                <strong>VP Promo</strong>,&nbsp;
+                                  <a href="http://csgames.org/"  target="_blank">CS Games</a>
+                              </p>
+                              <p class="text-muted">
+                                <small>
+                                  Jan, 2014 -
+                                    Mar, 2013
+                                </small>
+                              </p>
+                              <p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
+                              <ul>
+                              </ul>
+                            </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
             </div>
-        </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-38822538-3', 'auto');
-  ga('send', 'pageview');
-
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/tooltip.js"></script>
+  <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
 </script>
-    </body>
+</body>
 </html>
