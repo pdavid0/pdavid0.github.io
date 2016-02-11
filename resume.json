@@ -26,19 +26,35 @@
     ]
   },
   "work": [{
+      "company": "Yellow Pages Group Corp.",
+      "position": "Lead Android Developer",
+      "website": "https://play.google.com/store/apps/details?id=com.ypg.dine",
+      "startDate": "2015-04-27",
+      "endDate": "",
+      "summary": "Yellow Pages has created applications for these mobile devices to ensure that deal content is available to our users - even when they're on the go",
+      "highlights": [
+        "Design, Develop and test mobile application",
+        "Participate in team meetings to oversee the advancement of projects",
+        "Review, prioritize and execute development tasks in an independent manner",
+        "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+        "Implement mobile application solutions",
+        "Work with designers and product owner and guide them with the best workflow",
+        "Maintain and update Android Apps on the Google Play Store."
+      ]
+    },{
       "company": "Wherecloud Inc",
-      "position": "Senior Android Developer",
+      "position": "Mobile Technology Developer",
       "website": "http://wherecloud.com",
       "startDate": "2014-06-16",
-      "endDate": "2015-04-01",
+      "endDate": "2015-04-27",
       "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
       "highlights": [
         "Participate in team meetings to oversee the advancement of projects",
-		"Review, prioritize and execute development tasks in an independent manner",
-		"Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
-		"Implement mobile application solutions",
-		"Working with designers and account managers on a variety of projects",
-		"Provide on-site support for clients.",
+    "Review, prioritize and execute development tasks in an independent manner",
+    "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+    "Implement mobile application solutions",
+    "Working with designers and account managers on a variety of projects",
+    "Provide on-site support for clients.",
         "Maintain and update Android Apps on the Google Play Store.",
         "Maintain and update Web Apps."
       ]
