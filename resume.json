@@ -8,8 +8,8 @@
     "website": "http://pdavid0.github.io",
     "summary": "Curieux, Ingénieux, Créatif, Rêveur.",
     "location": {
-      "address": "1312 rue Baudry",
-      "postalCode": "H2L 3E4",
+      "address": "6761 Henri Julien Avenue, Montreal, QC",
+      "postalCode": "H2S 2V3",
       "city": "Montreal",
       "countryCode": "CA",
       "region": "Quebec"
@@ -22,8 +22,7 @@
       "network": "linkedin",
       "username": "philippe-david",
       "url": "https://www.linkedin.com/pub/philippe-david/24/8b9/4ab"
-    }
-    ]
+    }]
   },
   "work": [{
       "company": "Yellow Pages Group Corp.",
@@ -178,8 +177,7 @@
       "name": "iOS",
       "level": "Nooby",
       "keywords": [
-        "Willing to learn",
-		"Swift"
+        "Willing to learn","Swift"
       ]
     }
   ],
