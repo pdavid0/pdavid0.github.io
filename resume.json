@@ -33,12 +33,11 @@
       "summary": "Yellow Pages has created applications for these mobile devices to ensure that deal content is available to our users - even when they're on the go",
       "highlights": [
         "Design, Develop and test mobile application",
-        "Participate in team meetings to oversee the advancement of projects",
+        "Participate in team meetings to oversee the advancement of various mobile projects",
         "Review, prioritize and execute development tasks in an independent manner",
         "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
         "Implement mobile application solutions",
-        "Work with designers and product owner and guide them with the best workflow",
-        "Maintain and update Android Apps on the Google Play Store."
+        "Work with designers and product owner and guide them with the best workflow"
       ]
     },{
       "company": "Wherecloud Inc",
@@ -154,10 +153,11 @@
         "NodeJS",
         "Python",
         "Heroku",
+        "Google Cloud Platform",
         "AWS",
         "Cloud Services",
         "Firebase",
-		"Bower"
+        "Bower"
       ]
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "name": "iOS",
-      "level": "Nooby",
+      "level": "Low",
       "keywords": [
         "Willing to learn","Swift"
       ]
