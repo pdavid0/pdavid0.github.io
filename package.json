@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build-html && npm run build-pdf && npm run build-png",
-    "build-html": "resume export resume.html",
+    "build-html": "resume export resume.html --theme spartan",
     "build-pdf": "./bin/wkhtmltopdf --viewport-size 1920x1080 --page-size A4 -T 0 -B 0 -L 0 -R 0 resume.html resume.pdf",
     "build-png": "./bin/wkhtmltoimage --format png --width 1280 resume.html resume.png",
     "build-index": "resume export index.html",

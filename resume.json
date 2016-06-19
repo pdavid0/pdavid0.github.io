@@ -25,11 +25,11 @@
   },
   "work": [{
     "company": "Yellow Pages Group",
-    "position": "",
+    "position": "Senior Android Developer",
     "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
     "startDate": "2015-04-27",
     "endDate": "present",
-    "summary": "Senior Android Developer",
+    "summary": "YP Dine Android",
     "highlights": [
       "Participate in team meetings to oversee the advancement of projects",
       "Review, prioritize and execute development tasks in an independent manner",
@@ -45,7 +45,7 @@
     "website": "https://brumelance.herokuapp.com",
     "startDate": "2015-10-31",
     "endDate": "present",
-    "summary": "",
+    "summary": "Custom CMS to manage LARP events",
     "highlights": [
       "Full stack dev.",
       "DevOps",
@@ -80,7 +80,9 @@
     "endDate": "2014-04-31",
     "summary": "Junior RoR Consultant",
     "highlights": [
-      "Web development"
+      "Analyse the clients needs",
+      "Provide cost efficient solutions",
+      "Maintain and update Web App"
     ]
   }, {
     "company": "Solutions Medias 360",
