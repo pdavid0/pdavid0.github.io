@@ -1,0 +1,205 @@
+{
+  "basics": {
+    "name": "Philippe David",
+    "label": "Software Engineer",
+    "email": "philippe.david0@gmail.com",
+    "phone": "+1(450) 518-4231",
+    "website": "http://pdavid0.github.io",
+    "summary": "Curieux, Ingénieux, Créatif, Rêveur.",
+    "location": {
+      "address": "3600 Park Avenue",
+      "postalCode": "H2X 2R3",
+      "city": "Montreal",
+      "countryCode": "CA",
+      "region": "Quebec"
+    },
+    "profiles": [{
+      "network": "github",
+      "username": "pdavid0",
+      "url": "http://github.com/pdavid0"
+    }, {
+      "network": "linkedin",
+      "username": "philippe-david",
+      "url": "https://www.linkedin.com/pub/philippe-david/24/8b9/4ab"
+    }]
+  },
+  "work": [{
+    "company": "Yellow Pages Group",
+    "position": "",
+    "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
+    "startDate": "2015-04-27",
+    "endDate": "present",
+    "summary": "Senior Android Developer",
+    "highlights": [
+      "Participate in team meetings to oversee the advancement of projects",
+      "Review, prioritize and execute development tasks in an independent manner",
+      "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+      "Implement mobile application solutions",
+      "Continuous Integration expertise",
+      "Led the mobile software development effort",
+      "Mentored junior Developer on their careers and technical abilities"
+    ]
+  }, {
+    "company": "Brume Lance",
+    "position": "Consultant",
+    "website": "https://brumelance.herokuapp.com",
+    "startDate": "2015-10-31",
+    "endDate": "present",
+    "summary": "",
+    "highlights": [
+      "Full stack dev.",
+      "DevOps",
+      "Designer",
+      "System Architecture",
+      "Cost planning",
+      "On site deployment and maintenance"
+    ]
+  }, {
+    "company": "Wherecloud Inc",
+    "position": "Mobile Technology Developer",
+    "website": "http://wherecloud.com",
+    "startDate": "2014-06-16",
+    "endDate": "2015-04-27",
+    "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
+    "highlights": [
+      "Participate in team meetings to oversee the advancement of projects",
+      "Review, prioritize and execute development tasks in an independent manner",
+      "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+      "Implement mobile application solutions",
+      "Working with designers and account managers on a variety of projects",
+      "Provide on-site support for clients.",
+      "Maintain and update Android Apps on the Google Play Store.",
+      "Maintain and update Web Apps.",
+      "Continuous Integration expertise "
+    ]
+  }, {
+    "company": "LSR Communities",
+    "position": "Consultant",
+    "website": "http://www.lsrcommunities.com/",
+    "startDate": "2013-10-01",
+    "endDate": "2014-04-31",
+    "summary": "Junior RoR Consultant",
+    "highlights": [
+      "Web development"
+    ]
+  }, {
+    "company": "Solutions Medias 360",
+    "position": "Mobile Developer",
+    "website": "http://www.solutionsmedias360.com/",
+    "startDate": "2013-05-01",
+    "endDate": "2013-09-01",
+    "summary": "The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.",
+    "highlights": [
+      "Participate in the creation new Android Apps.",
+      "Write test for web services",
+      "Maintain and update Android Apps on the Google Play Store.",
+      "Maintain and update Web Apps."
+    ]
+  }, {
+    "company": "Quattriuum",
+    "position": "Mobile Developer",
+    "website": "http://www.Quattriuum.com/",
+    "startDate": "2012-05-01",
+    "endDate": "2013-05-01",
+    "summary": "Quattriuum specializes in motion tracking and analysis.",
+    "highlights": [
+      "Participate in the creation of the FWD Powershot, to measure hockyers performance.",
+      "Create software to record, visualize and extract raw sensor data.",
+      "Integrate cloud technologies and services",
+      "Android bluetooth communication",
+      "Provide tech. support for new prototypes",
+      "Create software documentation"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "Firefox Montreal",
+    "position": "Speaker",
+    "website": "https://reps.mozilla.org/e/firefox-os-app-day-montreal-2013/",
+    "startDate": "2013-05-08",
+    "endDate": "2013-05-25",
+    "summary": "Organise, present and promote the new OS at Firefox OS MTL Hackaton."
+  }, {
+    "organization": "ApplETS, mobile engineering",
+    "position": "President",
+    "website": "http://clubapplets.ca/",
+    "startDate": "2013-05-08",
+    "endDate": "2014-05-25",
+    "summary": "Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms."
+  }, {
+    "organization": "CS Games",
+    "position": "VP Promo",
+    "website": "http://csgames.org/",
+    "startDate": "2014-01-01",
+    "endDate": "2013-03-23",
+    "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges."
+  }],
+  "education": [{
+    "institution": "School of Superior Technology",
+    "area": "Software Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2010-09-01",
+    "endDate": "2015-05-20"
+  }, {
+    "institution": "Cegep de St-Hyacinthe",
+    "area": "Information Systems",
+    "studyType": "Collegiate",
+    "startDate": "2006-09-01",
+    "endDate": "2010-09-01"
+  }],
+  "awards": [{
+    "title": "2nd Place, Coveo Blitz 2014",
+    "date": "2014-01-11",
+    "awarder": "Coveo Inc",
+    "summary": "24h Developer Contest."
+  }, {
+    "title": "5th Place, CS Games 2013",
+    "date": "2013-03-23",
+    "awarder": "CS Games",
+    "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing."
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML5",
+      "Javascript 5/6",
+      "Babel",
+      "NodeJS","Ruby",
+      "Python","RoR",
+      "Heroku","IoT",
+      "AWS",
+      "Google Cloud Platform",
+      "PostgreSQL",
+      "Firebase",
+      "Bower"
+    ]
+  }, {
+    "name": "Android",
+    "level": "Master",
+    "keywords": [
+      "Java 1.8",
+      "Android Studio",
+      "Gradle",
+      "Espresso",
+      "Google Glass",
+      "Android Wear",
+      "Android TV",
+      "Daydream",
+      "Google I/O 2014",
+      "Google I/O 2016"
+    ]
+  }, {
+    "name": "iOS",
+    "level": "Nooby",
+    "keywords": [
+      "Willing to learn", "Swift"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Fluent"
+  }, {
+    "language": "French",
+    "fluency": "Langue maternelle"
+  }]
+}
