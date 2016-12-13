@@ -1,0 +1,1048 @@
+<!doctype html>
+<html>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>Philippe David</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+	<style>
+		/********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom reset */
+.main-summary p, 
+#publications .item,
+#skills .item,
+#languages .item,
+#references .item,
+#interests .item{
+	margin: 0;
+}
+
+
+/****************
+*		SMARTPHONES		
+****************/
+em {
+	color: #757575;
+}
+p {
+	margin: 1em 0;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+strong {
+	font-weight: 700;
+	font-size: 1.1em;
+}
+ul {
+	margin-top: 1em; 
+}
+div.item {
+	margin: 1em 0 2em;
+	padding-bottom: 2em;
+}
+div.item:last-of-type {
+	margin: 0;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+p {
+	text-align: justify;
+}
+
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2,
+h3 {
+	font-size: 1rem;
+}
+a {
+	color: #EB5F51;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Layout */
+body {
+	background: #f2f2f2;
+	line-height: 1.6;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#resume {
+	padding: 1rem 0;
+	margin: 1rem auto;
+}
+
+#header {
+	padding: 0 1em;
+	margin-bottom: 1em;
+}
+
+#resume > header div {
+	display: table;
+	padding-left: 0.5em;
+}
+
+#resume > header div.middle {
+	padding-top: 1.5em;
+}
+
+header img {
+	display: block;
+	width: 10em;
+	border-radius: 0.275em;
+	float: right;
+	vertical-align: middle;
+}
+
+header .name {
+	line-height: 1;
+}
+
+header .label {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #757575;
+}
+
+section:not(.section) {
+	padding: .5em 1rem;
+}
+
+section#references {
+	border-bottom:none;
+}
+
+section#basics {
+	background: inherit;
+	margin-bottom: 0;
+}
+
+section#skills {
+	padding-bottom: 0;
+}
+
+section#education, 
+section#work, 
+.main-summary section {
+	padding-bottom: 1em;
+}
+
+header::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+h2.section-title {
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #757575;
+	padding: 1em 1rem 0;
+	margin-bottom: 0.1275em;
+}
+
+.date {
+	font-weight: 700;
+	color: #757575;
+}
+
+.position, .area, .institution {
+	font-weight: 700;
+}
+
+#interests .item, #languages .item {
+	padding: 0 1em 1em 0;
+	border-bottom: none;
+}
+
+.website::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+	content: '\f14c';
+}
+
+#profiles, #skills, #interests, #languages {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+  padding-bottom: 1em;
+}
+
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
+}
+
+#profiles .item {
+	margin: 0;
+	padding: 0;
+	padding-right: 1em;
+	border-bottom: none;
+}
+
+#interests ul {
+	margin-top: 0.5em;
+}
+
+#publications .name {
+	font-style: italic;
+}
+
+.courses li, .keywords li{
+	display: inline-block;
+	background: #f0f0f0;
+	font-size: 0.9em;
+	line-height: 1;
+	color: #333;
+	padding: 0.4em 0.8em;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+#publications .date {
+	font-weight: normal;
+	color: #000;	
+}
+
+#skills .item {
+	min-width: 15em;
+	padding: 0 .5em .8em 0;
+	border-bottom: none;
+}
+
+
+/* Skills chart */
+#skills .level .bar {
+	border: 1px solid #ddd;
+	display: block;
+	width: 10em;
+	height: 5px;
+	margin: 0em 0 1em 0;
+	position: relative;
+}
+
+#skills .level .bar::after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	background: black;
+	height: 5px;
+}
+
+#skills .level.beginner .bar::after {
+	background: #EB5F51;
+	width: 2.5em;
+} 
+
+#skills .level.intermediate .bar::after {
+	background: #ffdf1f;
+	width: 5em;
+} 
+
+#skills .level.advanced .bar::after {
+	background: #59C596;
+	width: 7.5em;
+} 
+
+#skills .level.master .bar::after {
+	background: #5CB85C;
+	width: 10em;
+}
+
+#references .item {
+	padding-left: 1em;
+	border-left: 5px solid #EB5F51;
+}
+
+.fa.social {
+	margin-right: 0.25em;
+	font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+.google-plus {
+	color: #dd4b39;	
+}
+
+.tumblr {
+	color:#32506d;
+}
+
+.foursquare {
+	color:  #0072b1;
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.linkedin {
+	color: #007bb6;
+}
+
+.pinterest {
+	color: #cb2027;
+}
+
+.dribbble {
+	color: #ea4c89;
+}
+
+.instagram {
+	color: #517fa4;
+}
+
+.twitter {
+	color: #00aced;
+}
+
+.soundcloud { 
+	color: #ff3a00;
+}
+
+.wordpress {
+	color: #21759b;
+}
+
+.youtube {
+	color: #bb0000;
+}
+
+.github {
+	color: #171515;
+}
+
+.stack-overflow {
+	color: #828386;
+	position: relative;
+}
+
+.flickr {
+	color: #ff0084;
+}      
+
+.stack-overflow::after {
+	position: absolute;
+	left: 0;
+	content: '\f16c';
+	color: #f68a1f;
+	overflow: hidden;
+	height: 40%;
+}
+
+/******************
+*		HELPER CLASSES	
+******************/
+.fa {
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+}
+
+.clear {
+	display: table;
+	clear: both;
+}
+
+
+/****************
+*		TABLET
+****************/
+@media screen and (min-width: 602px) { 
+	
+	#resume {
+		width: 550px;
+		margin: 0 auto;
+	}
+	section > header > h3 {
+		float:left;
+	}
+	section > header > .date {
+		float: right;
+		line-height: 1.3;
+	}
+
+}
+
+
+/****************
+*		LAPTOP	
+****************/
+@media screen and (min-width: 1025px) { 
+	
+	#resume {
+		width: 650px;		
+		padding: 3em;
+		margin: 3em auto;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	}
+
+	.section {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		border-bottom: 1px solid #eee;
+	}
+
+	.section:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	section > header {
+		line-height: 1;
+		padding-bottom: 1em; 
+	}
+
+	h2.section-title {
+		line-height: 1.1;
+		padding-top: 0;
+	}
+
+	section:not(.section) {
+		width: 34.5em;
+		padding: 0 1em 1em 0;
+		margin-top:0;
+		border: none;
+	}
+
+	section p {
+		margin: 0;
+	}
+
+	section#basics {
+		width: auto;
+		padding-top: 1em;
+		padding-left: 1em;
+		padding-bottom: 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+
+	#profiles .item{
+		padding-bottom: 1em;
+	}
+
+	div {
+		padding: 0;
+	}
+
+	#skills .item {
+		padding-left:0;
+		margin-top: 0;
+	}
+
+	div.item {
+		margin-top: 0;
+		border-bottom: 1px solid #eee;
+	}
+
+}
+	</style>
+	
+
+	<body>
+		<div id="resume">
+				<header id="header">
+						<div>
+							<h1 class="name">Philippe David</h1>
+							<h2 class="label">Software Engineer</h2>
+						</div>
+
+				</header>
+				
+				<section id="basics">
+					
+						<div id="location">
+							<span class="fa fa-map-marker"></span>
+							<span class="address">
+								3600 Park Avenue,
+							</span>
+							<span class="postalCode">
+								H2X 2R3,
+							</span>
+							<span class="city">
+								Montreal
+							</span>
+							<span class="countryCode">
+								(CA),
+							</span>
+							<span class="region">
+								Quebec
+							</span>
+						</div>
+
+					<div id="contact">
+						<div class="website">
+							<a href="http://pdavid0.github.io">http://pdavid0.github.io</a>
+						</div>
+						<div class="email">
+							<span class="fa fa-envelope"></span>
+							<a href="/cdn-cgi/l/email-protection#fa8a929396938a8a9fd49e9b8c939ecaba9d979b9396d4999597"><span class="__cf_email__" data-cfemail="9aeaf2f3f6f3eaeaffb4fefbecf3feaadafdf7fbf3f6b4f9f5f7">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
+						</div>
+						<div class="phone">
+							<span class="fa fa-phone-square"></span>
+							+1(450) 518-4231
+						</div>
+					</div>
+				
+
+					<div id="profiles">
+						<div class="item">
+							<span class="network fa fa-github github"></span>
+							<span class="username">
+								<span class="url">
+									<a href="http://github.com/pdavid0">pdavid0</a>
+								</span>
+							</span>
+						</div>
+						<div class="item">
+							<span class="network fa fa-linkedin linkedin"></span>
+							<span class="username">
+								<span class="url">
+									<a href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab">philippe-david</a>
+								</span>
+							</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="section main-summary">
+					<h2 class='section-title'>About</h2>
+					<section>
+						<p>Curieux, Ingénieux, Créatif, Rêveur.</p>
+					</section>
+				</section>
+
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Experience</h2>
+					<section id="work">
+						<header>
+							<h3 class="name">
+								Yellow Pages Group
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									April 2015
+								</span>
+								<span class="endDate">
+									- Invalid date
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Senior Android Developer
+						</div>
+						<div class="website">
+							<a href="https://play.google.com/store/apps/details?id=com.ypg.dine&amp;hl=fr_CA">https://play.google.com/store/apps/details?id=com.ypg.dine&amp;hl=fr_CA</a>
+						</div>
+						<div class="summary">
+							<p>YP Dine Android</p>
+						</div>
+						<ul class="highlights">
+							<li>Participate in team meetings to oversee the advancement of projects</li>
+							<li>Review, prioritize and execute development tasks in an independent manner</li>
+							<li>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</li>
+							<li>Implement mobile application solutions</li>
+							<li>Continuous Integration expertise</li>
+							<li>Led the mobile software development effort</li>
+							<li>Mentored junior Developer on their careers and technical abilities</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Brume Lance
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									October 2015
+								</span>
+								<span class="endDate">
+									- Invalid date
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Consultant
+						</div>
+						<div class="website">
+							<a href="https://brumelance.herokuapp.com">https://brumelance.herokuapp.com</a>
+						</div>
+						<div class="summary">
+							<p>Custom CMS to manage LARP events</p>
+						</div>
+						<ul class="highlights">
+							<li>Full stack dev.</li>
+							<li>DevOps</li>
+							<li>Designer</li>
+							<li>System Architecture</li>
+							<li>Cost planning</li>
+							<li>On site deployment and maintenance</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Wherecloud Inc
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									June 2014
+								</span>
+								<span class="endDate">
+									- April 2015
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Mobile Technology Developer
+						</div>
+						<div class="website">
+							<a href="http://wherecloud.com">http://wherecloud.com</a>
+						</div>
+						<div class="summary">
+							<p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
+						</div>
+						<ul class="highlights">
+							<li>Participate in team meetings to oversee the advancement of projects</li>
+							<li>Review, prioritize and execute development tasks in an independent manner</li>
+							<li>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</li>
+							<li>Implement mobile application solutions</li>
+							<li>Working with designers and account managers on a variety of projects</li>
+							<li>Provide on-site support for clients.</li>
+							<li>Maintain and update Android Apps on the Google Play Store.</li>
+							<li>Maintain and update Web Apps.</li>
+							<li>Continuous Integration expertise </li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								LSR Communities
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									October 2013
+								</span>
+								<span class="endDate">
+									- Invalid date
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Consultant
+						</div>
+						<div class="website">
+							<a href="http://www.lsrcommunities.com/">http://www.lsrcommunities.com/</a>
+						</div>
+						<div class="summary">
+							<p>Junior RoR Consultant</p>
+						</div>
+						<ul class="highlights">
+							<li>Analyse the clients needs</li>
+							<li>Provide cost efficient solutions</li>
+							<li>Maintain and update Web App</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Solutions Medias 360
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									May 2013
+								</span>
+								<span class="endDate">
+									- September 2013
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Mobile Developer
+						</div>
+						<div class="website">
+							<a href="http://www.solutionsmedias360.com/">http://www.solutionsmedias360.com/</a>
+						</div>
+						<div class="summary">
+							<p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
+						</div>
+						<ul class="highlights">
+							<li>Participate in the creation new Android Apps.</li>
+							<li>Write test for web services</li>
+							<li>Maintain and update Android Apps on the Google Play Store.</li>
+							<li>Maintain and update Web Apps.</li>
+						</ul>
+					</div>
+						<header>
+							<h3 class="name">
+								Quattriuum
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									May 2012
+								</span>
+								<span class="endDate">
+									- May 2013
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Mobile Developer
+						</div>
+						<div class="website">
+							<a href="http://www.Quattriuum.com/">http://www.Quattriuum.com/</a>
+						</div>
+						<div class="summary">
+							<p>Quattriuum specializes in motion tracking and analysis.</p>
+						</div>
+						<ul class="highlights">
+							<li>Participate in the creation of the FWD Powershot, to measure hockyers performance.</li>
+							<li>Create software to record, visualize and extract raw sensor data.</li>
+							<li>Integrate cloud technologies and services</li>
+							<li>Android bluetooth communication</li>
+							<li>Provide tech. support for new prototypes</li>
+							<li>Create software documentation</li>
+						</ul>
+					</div>
+					</section>
+				</section>
+		
+				<section class="section">
+					<h2 class='section-title'>Education</h2>
+					<section id="education">
+							<header>
+									<h3 class="institution">
+										School of Superior Technology
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2010
+									</span>
+									<span class="endDate">
+										- 2015
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Bachelor
+									</div>
+									<div class="area">
+										Software Engineering
+									</div>
+							</div>
+							<header>
+									<h3 class="institution">
+										Cegep de St-Hyacinthe
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2006
+									</span>
+									<span class="endDate">
+										- 2010
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										Collegiate
+									</div>
+									<div class="area">
+										Information Systems
+									</div>
+							</div>
+					</section>
+				</section>
+		
+			
+				<section class="section">
+					<h2 class='section-title'>Volunteer</h2>
+					<section id="volunteer">
+								<header>
+									<h3 class="company">
+										Firefox Montreal
+									</h3>
+									<div class="date">
+										<span class="startDate">
+											May 2013
+										</span>
+										<span class="endDate">
+											- May 2013
+										</span>
+								</header>
+							<div class="item">
+							<div class="position">
+								Speaker
+							</div>
+							<div class="website">
+								<a href="https://reps.mozilla.org/e/firefox-os-app-day-montreal-2013/">https://reps.mozilla.org/e/firefox-os-app-day-montreal-2013/</a>
+							</div>
+							<div class="summary">
+								<p>Organise, present and promote the new OS at Firefox OS MTL Hackaton.</p>
+							</div>
+						</div>
+								<header>
+									<h3 class="company">
+										ApplETS, mobile engineering
+									</h3>
+									<div class="date">
+										<span class="startDate">
+											May 2013
+										</span>
+										<span class="endDate">
+											- May 2014
+										</span>
+								</header>
+							<div class="item">
+							<div class="position">
+								President
+							</div>
+							<div class="website">
+								<a href="http://clubapplets.ca/">http://clubapplets.ca/</a>
+							</div>
+							<div class="summary">
+								<p>Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms.</p>
+							</div>
+						</div>
+								<header>
+									<h3 class="company">
+										CS Games
+									</h3>
+									<div class="date">
+										<span class="startDate">
+											January 2014
+										</span>
+										<span class="endDate">
+											- March 2013
+										</span>
+								</header>
+							<div class="item">
+							<div class="position">
+								VP Promo
+							</div>
+							<div class="website">
+								<a href="http://csgames.org/">http://csgames.org/</a>
+							</div>
+							<div class="summary">
+								<p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Awards</h2>
+					<section id="awards">
+						<div class="date">
+							11 January 2014
+						</div>
+						<div class="item">
+							<div class="title">
+								2nd Place, Coveo Blitz 2014
+							</div>
+							<div class="awarder">
+								Coveo Inc
+							</div>
+							<div class="summary">
+								<p>24h Developer Contest.</p>
+							</div>
+						</div>
+						<div class="date">
+							23 March 2013
+						</div>
+						<div class="item">
+							<div class="title">
+								5th Place, CS Games 2013
+							</div>
+							<div class="awarder">
+								CS Games
+							</div>
+							<div class="summary">
+								<p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing.</p>
+							</div>
+						</div>
+					</section>
+				</section>
+		
+		
+				<section class="section">
+					<h2 class='section-title'>Skills</h2>
+					<section id="skills">
+						<div class="item">
+							<div class="name">
+								Web Development
+							</div>
+							<div class="level master">
+								<em>Master</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>HTML5</li>
+								<li>Javascript 5/6</li>
+								<li>Babel</li>
+								<li>NodeJS</li>
+								<li>Ruby</li>
+								<li>Python</li>
+								<li>RoR</li>
+								<li>Heroku</li>
+								<li>IoT</li>
+								<li>AWS</li>
+								<li>Google Cloud Platform</li>
+								<li>PostgreSQL</li>
+								<li>Firebase</li>
+								<li>Bower</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Android
+							</div>
+							<div class="level master">
+								<em>Master</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>Java 1.8</li>
+								<li>Android Studio</li>
+								<li>Gradle</li>
+								<li>Espresso</li>
+								<li>Google Glass</li>
+								<li>Android Wear</li>
+								<li>Android TV</li>
+								<li>Daydream</li>
+								<li>Google I/O 2014</li>
+								<li>Google I/O 2016</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								iOS
+							</div>
+							<div class="level nooby">
+								<em>Nooby</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>Willing to learn</li>
+								<li>Swift</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Languages</h2>
+					<section id="languages">
+						<div class="item">
+							<div class="language">
+								English
+							</div>
+							<div class="fluency">
+								<em>Fluent</em>
+							</div>
+						</div>
+						<div class="item">
+							<div class="language">
+								French
+							</div>
+							<div class="fluency">
+								<em>Langue maternelle</em>
+							</div>
+						</div>
+					</section>
+				</section>
+
+		
+		</div>		
+	<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+	
+</html>
