@@ -24,6 +24,23 @@
     }]
   },
   "work": [{
+    "company": "Bus.com",
+    "position": "Senior Software Engineer",
+    "website": "https://www.bus.com",
+    "startDate": "2017-04-27",
+    "endDate": "present",
+    "summary": "",
+    "highlights": [
+      "Participate in team meetings to oversee the advancement of projects",
+      "Review, prioritize and execute development tasks in an independent manner",
+      "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+      "Implement mobile application solutions",
+      "Led the mobile software development effort",
+      "Mentored junior Developer on their careers and technical abilities",
+      "Maintain and update Web Apps.",
+      "Continuous Integration expertise "
+    ]
+  },{
     "company": "Yellow Pages Group",
     "position": "Senior Android Developer",
     "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
@@ -73,18 +90,6 @@
       "Continuous Integration expertise "
     ]
   }, {
-    "company": "LSR Communities",
-    "position": "Consultant",
-    "website": "http://www.lsrcommunities.com/",
-    "startDate": "2013-10-01",
-    "endDate": "2014-04-31",
-    "summary": "Junior RoR Consultant",
-    "highlights": [
-      "Analyse the clients needs",
-      "Provide cost efficient solutions",
-      "Maintain and update Web App"
-    ]
-  }, {
     "company": "Solutions Medias 360",
     "position": "Mobile Developer",
     "website": "http://www.solutionsmedias360.com/",
@@ -114,12 +119,12 @@
     ]
   }],
   "volunteer": [{
-    "organization": "Firefox Montreal",
-    "position": "Speaker",
-    "website": "https://reps.mozilla.org/e/firefox-os-app-day-montreal-2013/",
-    "startDate": "2013-05-08",
-    "endDate": "2013-05-25",
-    "summary": "Organise, present and promote the new OS at Firefox OS MTL Hackaton."
+    "organization": "GDG Montreal Android",
+    "position": "Speaker, Co Organizer",
+    "website": "http://android-montreal.com/",
+    "startDate": "2017-04-01",
+    "endDate": "present",
+    "summary": "Organise, present and promote Android development."
   }, {
     "organization": "ApplETS, mobile engineering",
     "position": "President",
@@ -169,10 +174,12 @@
       "NodeJS","Ruby",
       "Python","RoR",
       "Heroku","IoT",
+      "React", "React Native"
       "AWS",
       "Google Cloud Platform",
       "PostgreSQL",
       "Firebase",
+      "Firestore",
       "Bower"
     ]
   }, {
@@ -189,6 +196,12 @@
       "Daydream",
       "Google I/O 2014",
       "Google I/O 2016"
+    ]
+  }, {
+    "name": "Web",
+    "level": "Advanced",
+    "keywords": [
+      ""
     ]
   }, {
     "name": "iOS",
