@@ -28,7 +28,6 @@
     "position": "Senior Software Engineer",
     "website": "https://www.bus.com",
     "startDate": "2017-04-27",
-    "endDate": "present",
     "summary": "",
     "highlights": [
       "Participate in team meetings to oversee the advancement of projects",
@@ -45,7 +44,7 @@
     "position": "Senior Android Developer",
     "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
     "startDate": "2015-04-27",
-    "endDate": "present",
+
     "summary": "YP Dine Android",
     "highlights": [
       "Participate in team meetings to oversee the advancement of projects",
@@ -61,7 +60,7 @@
     "position": "Consultant",
     "website": "https://brumelance.herokuapp.com",
     "startDate": "2015-10-31",
-    "endDate": "present",
+
     "summary": "Custom CMS to manage LARP events",
     "highlights": [
       "Full stack dev.",
@@ -123,7 +122,7 @@
     "position": "Speaker, Co Organizer",
     "website": "http://android-montreal.com/",
     "startDate": "2017-04-01",
-    "endDate": "present",
+
     "summary": "Organise, present and promote Android development."
   }, {
     "organization": "ApplETS, mobile engineering",
@@ -174,7 +173,7 @@
       "NodeJS","Ruby",
       "Python","RoR",
       "Heroku","IoT",
-      "React", "React Native"
+      "React", "React Native",
       "AWS",
       "Google Cloud Platform",
       "PostgreSQL",
@@ -201,7 +200,7 @@
     "name": "Web",
     "level": "Advanced",
     "keywords": [
-      ""
+      "Rails", "React", "AngularJS"
     ]
   }, {
     "name": "iOS",
