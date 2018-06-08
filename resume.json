@@ -3,7 +3,7 @@
     "name": "Philippe David",
     "label": "Software Engineer",
     "website": "http://pdavid0.github.io",
-    "summary": "Curious, Dreamer, Ingenious.",
+    "summary": "Creative, Curious, Dreamer, Ingenious.",
     "location": {
       "address": "3600 Park Avenue",
       "postalCode": "H2X 2R3",
@@ -133,6 +133,12 @@
     "startDate": "2013-05-08",
     "endDate": "2014-05-25",
     "summary": "Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms."
+  }, {
+    "organization": "Brumelance - LARP Events",
+    "position": "IT Elf",
+    "website": "http://brumelance.com/",
+    "startDate": "2016-01-01",
+    "summary": "IT in the woods. Come, we have wifi (almost)!"
   }, {
     "organization": "CS Games",
     "position": "VP Promo",
