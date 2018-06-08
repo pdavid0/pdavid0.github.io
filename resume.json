@@ -2,10 +2,8 @@
   "basics": {
     "name": "Philippe David",
     "label": "Software Engineer",
-    "email": "philippe.david0@gmail.com",
-    "phone": "+1(450) 518-4231",
     "website": "http://pdavid0.github.io",
-    "summary": "Curieux, Ingénieux, Créatif, Rêveur.",
+    "summary": "Curious, Dreamer, Ingenious.",
     "location": {
       "address": "3600 Park Avenue",
       "postalCode": "H2X 2R3",
@@ -25,43 +23,48 @@
   },
   "work": [{
     "company": "Bus.com",
-    "position": "Senior Software Engineer",
+    "position": "Lead Software Engineer",
     "website": "https://www.bus.com",
+    "app": "https://www.bus.com",
     "startDate": "2017-04-27",
-    "summary": "",
+    "summary": "FullStack, Mobile, DevOps.",
     "highlights": [
-      "Participate in team meetings to oversee the advancement of projects",
+      "Leads teams of 2-4 people that develop, test, and fix defects in application software.",
+      "Leads work teams in preparing work estimates and project schedules for all technical work for the projects within the team.",
+      "Maintains expert knowledge on the systems and tools within the scope of the team's responsibility. Maintains expert knowledge of the business processes supported by the systems. Maintains expert-level knowledge of software development best practices, tools, and methodologies that are recognized throughout Information Systems.",
+      "Oversee the advancement of projects",
       "Review, prioritize and execute development tasks in an independent manner",
+      "Leads teams focused on quality and continuous improvement initiatives across business units within the company.",
       "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
       "Implement mobile application solutions",
-      "Led the mobile software development effort",
+      "Lead the mobile software development project",
       "Mentored junior Developer on their careers and technical abilities",
-      "Maintain and update Web Apps.",
-      "Continuous Integration expertise "
+      "Maintain and update FullStack Web Apps",
+      "Continuous Integration",
+      "Continuous Distribution",
+      "https://play.google.com/store/apps/details?id=com.bus.consumer"
     ]
-  },{
+  }, {
     "company": "Yellow Pages Group",
     "position": "Senior Android Developer",
     "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
     "startDate": "2015-04-27",
-
+    "endDate": "2017-04-27",
     "summary": "YP Dine Android",
     "highlights": [
       "Participate in team meetings to oversee the advancement of projects",
       "Review, prioritize and execute development tasks in an independent manner",
-      "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
       "Implement mobile application solutions",
       "Continuous Integration expertise",
-      "Led the mobile software development effort",
-      "Mentored junior Developer on their careers and technical abilities"
+      "Mentored junior Developer"
     ]
   }, {
     "company": "Brume Lance",
-    "position": "Consultant",
+    "position": "CTO",
     "website": "https://brumelance.herokuapp.com",
     "startDate": "2015-10-31",
 
-    "summary": "Custom CMS to manage LARP events",
+    "summary": "Custom CMS to manage LARP events. Transform a rulebook into a Web App.",
     "highlights": [
       "Full stack dev.",
       "DevOps",
@@ -119,11 +122,10 @@
   }],
   "volunteer": [{
     "organization": "GDG Montreal Android",
-    "position": "Speaker, Co Organizer",
+    "position": "Speaker, Co-Organizer",
     "website": "http://android-montreal.com/",
     "startDate": "2017-04-01",
-
-    "summary": "Organise, present and promote Android development."
+    "summary": "Organise, present, teach and promote Android development."
   }, {
     "organization": "ApplETS, mobile engineering",
     "position": "President",
@@ -167,19 +169,18 @@
     "name": "Web Development",
     "level": "Master",
     "keywords": [
-      "HTML5",
-      "Javascript 5/6",
-      "Babel",
+      "HTML5", "CSS3",
+      "Babel", "ES6",
       "NodeJS", "Ruby",
       "Python", "Rails",
       "Heroku", "IoT",
+      "CoffeScript",
       "React", "React Native",
-      "AWS",
+      "AWS", "S3", "Redis",
       "Google Cloud Platform",
-      "PostgreSQL",
-      "Firebase",
-      "Firestore",
-      "Bower"
+      "PostgreSQL", "MySQL",
+      "Firebase", "Firestore",
+      "Bower", "PWA"
     ]
   }, {
     "name": "Android",
@@ -187,14 +188,20 @@
     "keywords": [
       "Java 1.8",
       "Android Studio",
-      "Gradle",
-      "Espresso",
-      "Google Glass",
-      "Android Wear",
+      "Android Things",
       "Android TV",
+      "Gradle", "Espresso",
+      "Firebase", "NoSQL",
+      "Instant Apps", "BlueTooth",
+      "Flutter",
+      "Google Glass",
       "Daydream",
+      "Kotlin",
+      "WearOS",
       "Google I/O 2014",
-      "Google I/O 2016"
+      "Google I/O 2016",
+      "Google I/O 2017",
+      "Google I/O 2018"
     ]
   }, {
     "name": "iOS",

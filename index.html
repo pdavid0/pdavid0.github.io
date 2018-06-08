@@ -1,1032 +1,1054 @@
-<!doctype html>
-<html>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-<title>Philippe David</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
-<style>
-		/********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Philippe David</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9yug7q');
+  src:  url('fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9yug7q') format('truetype'),
+    url('fonts/icomoon.woff?9yug7q') format('woff'),
+    url('fonts/icomoon.svg?9yug7q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-trophy:before {
+  content: "\e605";
+}
+.icon-office:before {
+  content: "\e606";
+}
+.icon-clock:before {
+  content: "\e60a";
+}
+.icon-reddit:before {
+  content: "\e609";
+}
+.icon-telegram:before {
+  content: "\e904";
+}
+.icon-flickr:before {
+  content: "\f16e";
+}
+.icon-medium:before {
+  content: "\f23a";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-linkedin:before {
+  content: "\f08c";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-link:before {
+  content: "\f0c1";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-googleplus:before {
+  content: "\f0d5";
+}
+.icon-circle:before {
+  content: "\f111";
+}
+.icon-code:before {
+  content: "\f121";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-stackoverflow:before {
+  content: "\f16c";
+}
+.icon-bitbucket:before {
+  content: "\f171";
+}
+.icon-tumblr:before {
+  content: "\f173";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-foursquare:before {
+  content: "\f180";
+}
+.icon-gittip:before {
+  content: "\f184";
+}
+.icon-gratipay:before {
+  content: "\f184";
+}
+.icon-stackexchange:before {
+  content: "\f18d";
+}
+.icon-vimeo:before {
+  content: "\f194";
+}
+.icon-graduation-cap:before {
+  content: "\f19d";
+}
+.icon-language:before {
+  content: "\f1ab";
+}
+.icon-child:before {
+  content: "\f1ae";
+}
+.icon-behance:before {
+  content: "\f1b5";
+}
+.icon-spotify:before {
+  content: "\f1bc";
+}
+.icon-soundcloud:before {
+  content: "\f1be";
+}
+.icon-codepen:before {
+  content: "\f1cb";
+}
+.icon-hackernews:before {
+  content: "\f1d4";
+}
+.icon-lastfm:before {
+  content: "\f202";
+}
+.icon-angellist:before {
+  content: "\f209";
+}
+.icon-facebook:before {
+  content: "\f230";
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
+.icon-exercism:before {
+  content: "\e601";
+}
+.icon-profile:before {
+  content: "\e600";
+}
+.icon-tools:before {
+  content: "\e034";
+}
+.icon-location:before {
+  content: "\e602";
+}
+.icon-mail:before {
+  content: "\e603";
+}
+.icon-phone:before {
+  content: "\e03f";
+}
+.icon-newspaper:before {
+  content: "\e607";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-chevron-down:before {
+  content: "\e60c";
+}
+.icon-chevron-up:before {
+  content: "\e60d";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-board:before {
+  content: "\e608";
+}
+
+
+.relative {
+  position: relative;
+}
+.clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.space-bottom {
+  margin-bottom: 10px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.labels {
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  margin-right: 5px;
+}
+.label-keyword:last-child {
+  margin-right: 0;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+.clear-margin {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+.fs-lg {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+.fs-2x {
+  font-size: 2em;
+}
+.fs-3x {
+  font-size: 3em;
+}
+.fs-4x {
+  font-size: 4em;
+}
+.btn-circle-sm {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  outline: none !important;
+}
+@font-face {
+  font-family: 'jst-elegant';
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jst-elegant' !important;
 }
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Custom reset */
-.main-summary p, 
-#publications .item,
-#skills .item,
-#languages .item,
-#references .item,
-#interests .item{
-	margin: 0;
-}
-
-
-/****************
-*		SMARTPHONES		
-****************/
-em {
-	color: #757575;
-}
-p {
-	margin: 1em 0;
-}
-blockquote {
-	margin: 0;
-	margin-bottom: 1em;
-}
-strong {
-	font-weight: 700;
-	font-size: 1.1em;
-}
-ul {
-	margin-top: 1em; 
-}
-div.item {
-	margin: 1em 0 2em;
-	padding-bottom: 2em;
-}
-div.item:last-of-type {
-	margin: 0;
-	border-bottom: none;
-	padding-bottom: 0;
-}
-p {
-	text-align: justify;
-}
-
-
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-}
-h1 {
-	font-size: 2.5rem;
-}
-h2,
-h3 {
-	font-size: 1rem;
-}
-a {
-	color: #EB5F51;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-
-/* Layout */
-body {
-	background: #f2f2f2;
-	line-height: 1.6;
-	font-size: 13px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#resume {
-	padding: 1rem 0;
-	margin: 1rem auto;
-}
-
-#header {
-	padding: 0 1em;
-	margin-bottom: 1em;
-}
-
-#resume > header div {
-	display: table;
-	padding-left: 0.5em;
-}
-
-#resume > header div.middle {
-	padding-top: 1.5em;
-}
-
-header img {
-	display: block;
-	width: 10em;
-	border-radius: 0.275em;
-	float: right;
-	vertical-align: middle;
-}
-
-header .name {
-	line-height: 1;
-}
-
-header .label {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: #757575;
-}
-
-section:not(.section) {
-	padding: .5em 1rem;
-}
-
-section#references {
-	border-bottom:none;
-}
-
-section#basics {
-	background: inherit;
-	margin-bottom: 0;
-}
-
-section#skills {
-	padding-bottom: 0;
-}
-
-section#education, 
-section#work, 
-.main-summary section {
-	padding-bottom: 1em;
-}
-
-header::after {
-	display: table;
-	content: " ";
-	clear: both;
-}
-
-h2.section-title {
-	text-align: left;
-	font-size: 1rem;
-	font-weight: 400;
-	color: #757575;
-	padding: 1em 1rem 0;
-	margin-bottom: 0.1275em;
-}
-
-.date {
-	font-weight: 700;
-	color: #757575;
-}
-
-.position, .area, .institution {
-	font-weight: 700;
-}
-
-#interests .item, #languages .item {
-	padding: 0 1em 1em 0;
-	border-bottom: none;
-}
-
-.website::before {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-	content: '\f14c';
-}
-
-#profiles, #skills, #interests, #languages {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
-  padding-bottom: 1em;
-}
-
-#profiles, #location {
-	box-shadow: none;
-	padding: 0;
-}
-
-#profiles .item {
-	margin: 0;
-	padding: 0;
-	padding-right: 1em;
-	border-bottom: none;
-}
-
-#interests ul {
-	margin-top: 0.5em;
-}
-
-#publications .name {
-	font-style: italic;
-}
-
-.courses li, .keywords li{
-	display: inline-block;
-	background: #f0f0f0;
-	font-size: 0.9em;
-	line-height: 1;
-	color: #333;
-	padding: 0.4em 0.8em;
-	border-bottom: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-radius: 3px;
-}
-
-#publications .date {
-	font-weight: normal;
-	color: #000;	
-}
-
-#skills .item {
-	min-width: 15em;
-	padding: 0 .5em .8em 0;
-	border-bottom: none;
-}
-
-
-/* Skills chart */
-#skills .level .bar {
-	border: 1px solid #ddd;
-	display: block;
-	width: 10em;
-	height: 5px;
-	margin: 0em 0 1em 0;
-	position: relative;
-}
-
-#skills .level .bar::after {
-	position: absolute;
-	content: " ";
-	top: 0;
-	left: 0;
-	background: black;
-	height: 5px;
-}
-
-#skills .level.beginner .bar::after {
-	background: #EB5F51;
-	width: 2.5em;
-} 
-
-#skills .level.intermediate .bar::after {
-	background: #ffdf1f;
-	width: 5em;
-} 
-
-#skills .level.advanced .bar::after {
-	background: #59C596;
-	width: 7.5em;
-} 
-
-#skills .level.master .bar::after {
-	background: #5CB85C;
-	width: 10em;
-}
-
-#references .item {
-	padding-left: 1em;
-	border-left: 5px solid #EB5F51;
-}
-
-.fa.social {
-	margin-right: 0.25em;
-	font-size: 1.1em;
-}
-
-/* Social Media Brand Colors */
-.google-plus {
-	color: #dd4b39;	
-}
-
-.tumblr {
-	color:#32506d;
-}
-
-.foursquare {
-	color:  #0072b1;
-}
-
-.facebook {
-	color: #3b5998;
-}
-
-.linkedin {
-	color: #007bb6;
-}
-
-.pinterest {
-	color: #cb2027;
-}
-
-.dribbble {
-	color: #ea4c89;
-}
-
-.instagram {
-	color: #517fa4;
-}
-
-.twitter {
-	color: #00aced;
-}
-
-.soundcloud { 
-	color: #ff3a00;
-}
-
-.wordpress {
-	color: #21759b;
-}
-
-.youtube {
-	color: #bb0000;
-}
-
-.github {
-	color: #171515;
-}
-
-.stack-overflow {
-	color: #828386;
-	position: relative;
-}
-
-.flickr {
-	color: #ff0084;
-}      
-
-.stack-overflow::after {
-	position: absolute;
-	left: 0;
-	content: '\f16c';
-	color: #f68a1f;
-	overflow: hidden;
-	height: 40%;
-}
-
-/******************
-*		HELPER CLASSES	
-******************/
-.fa {
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-}
-
-.clear {
-	display: table;
-	clear: both;
-}
-
-
-/****************
-*		TABLET
-****************/
-@media screen and (min-width: 602px) { 
-	
-	#resume {
-		width: 550px;
-		margin: 0 auto;
-	}
-	section > header > h3 {
-		float:left;
-	}
-	section > header > .date {
-		float: right;
-		line-height: 1.3;
-	}
-
-}
-
-
-/****************
-*		LAPTOP	
-****************/
-@media screen and (min-width: 1025px) { 
-	
-	#resume {
-		width: 650px;		
-		padding: 3em;
-		margin: 3em auto;
-		background: #fff;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-	}
-
-	.section {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		-webkit-justify-content: space-between;
-		justify-content: space-between;
-		margin-bottom: 1em;
-		margin-top: 1em;
-		border-bottom: 1px solid #eee;
-	}
-
-	.section:last-of-type {
-		border-bottom: none;
-		margin-bottom: 0;
-	}
-
-	section > header {
-		line-height: 1;
-		padding-bottom: 1em; 
-	}
-
-	h2.section-title {
-		line-height: 1.1;
-		padding-top: 0;
-	}
-
-	section:not(.section) {
-		width: 34.5em;
-		padding: 0 1em 1em 0;
-		margin-top:0;
-		border: none;
-	}
-
-	section p {
-		margin: 0;
-	}
-
-	section#basics {
-		width: auto;
-		padding-top: 1em;
-		padding-left: 1em;
-		padding-bottom: 0;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-	}
-
-	#profiles .item{
-		padding-bottom: 1em;
-	}
-
-	div {
-		padding: 0;
-	}
-
-	#skills .item {
-		padding-left:0;
-		margin-top: 0;
-	}
-
-	div.item {
-		margin-top: 0;
-		border-bottom: 1px solid #eee;
-	}
-
-}
-	</style>
-<body>
-<div id="resume">
-<header id="header">
-<div>
-<h1 class="name">Philippe David</h1>
-<h2 class="label">Software Engineer</h2>
-</div>
-</header>
-<section id="basics">
-<div id="location">
-<span class="fa fa-map-marker"></span>
-<span class="address">
-3600 Park Avenue,
-</span>
-<span class="postalCode">
- H2X 2R3,
-</span>
-<span class="city">
-Montreal
-</span>
-<span class="countryCode">
-(CA),
-</span>
-<span class="region">
-Quebec
-</span>
-</div>
-<div id="contact">
-<div class="website">
-<a href="http://pdavid0.github.io">http://pdavid0.github.io</a>
-</div>
-<div class="email">
-<span class="fa fa-envelope"></span>
-<a href="/cdn-cgi/l/email-protection#1d6d757471746d6d7833797c6b74792d5d7a707c7471337e7270"><span class="__cf_email__" data-cfemail="4d3d252421243d3d2863292c3b24297d0d2a202c2421632e2220">[email&#160;protected]</span></a>
-</div>
-<div class="phone">
-<span class="fa fa-phone-square"></span>
-+1(450) 518-4231
-</div>
-</div>
-<div id="profiles">
-<div class="item">
-<span class="network fa fa-github github"></span>
-<span class="username">
-<span class="url">
-<a href="http://github.com/pdavid0">pdavid0</a>
-</span>
-</span>
-</div>
-<div class="item">
-<span class="network fa fa-linkedin linkedin"></span>
-<span class="username">
-<span class="url">
-<a href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab">philippe-david</a>
-</span>
-</span>
-</div>
-</div>
-</section>
-<section class="section main-summary">
-<h2 class='section-title'>About</h2>
-<section>
-<p>Curieux, Ingénieux, Créatif, Rêveur.</p>
-</section>
-</section>
-</section>
-<section class="section">
-<h2 class='section-title'>Experience</h2>
-<section id="work">
-<header>
-<h3 class="name">
-Bus.com
-</h3>
-<div class="date">
-<span class="startDate">
-April 2017
-</span>
-<span class="endDate">
-- Present
-</span>
-</div>
-</header>
-<div class="item">
-<div class="position">
-Senior Software Engineer
-</div>
-<div class="website">
-<a href="https://www.bus.com">https://www.bus.com</a>
-</div>
-<ul class="highlights">
-<li>Participate in team meetings to oversee the advancement of projects</li>
-<li>Review, prioritize and execute development tasks in an independent manner</li>
-<li>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</li>
-<li>Implement mobile application solutions</li>
-<li>Led the mobile software development effort</li>
-<li>Mentored junior Developer on their careers and technical abilities</li>
-<li>Maintain and update Web Apps.</li>
-<li>Continuous Integration expertise </li>
-</ul>
-</div>
-<header>
-<h3 class="name">
-Yellow Pages Group
-</h3>
-<div class="date">
-<span class="startDate">
-April 2015
-</span>
-<span class="endDate">
-- Present
-</span>
-</div>
-</header>
-<div class="item">
-<div class="position">
-Senior Android Developer
-</div>
-<div class="website">
-<a href="https://play.google.com/store/apps/details?id=com.ypg.dine&amp;hl=fr_CA">https://play.google.com/store/apps/details?id=com.ypg.dine&amp;hl=fr_CA</a>
-</div>
-<div class="summary">
-<p>YP Dine Android</p>
-</div>
-<ul class="highlights">
-<li>Participate in team meetings to oversee the advancement of projects</li>
-<li>Review, prioritize and execute development tasks in an independent manner</li>
-<li>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</li>
-<li>Implement mobile application solutions</li>
-<li>Continuous Integration expertise</li>
-<li>Led the mobile software development effort</li>
-<li>Mentored junior Developer on their careers and technical abilities</li>
-</ul>
-</div>
-<header>
-<h3 class="name">
-Brume Lance
-</h3>
-<div class="date">
-<span class="startDate">
-October 2015
-</span>
-<span class="endDate">
-- Present
-</span>
-</div>
-</header>
-<div class="item">
-<div class="position">
-Consultant
-</div>
-<div class="website">
-<a href="https://brumelance.herokuapp.com">https://brumelance.herokuapp.com</a>
-</div>
-<div class="summary">
-<p>Custom CMS to manage LARP events</p>
-</div>
-<ul class="highlights">
-<li>Full stack dev.</li>
-<li>DevOps</li>
-<li>Designer</li>
-<li>System Architecture</li>
-<li>Cost planning</li>
-<li>On site deployment and maintenance</li>
-</ul>
-</div>
-<header>
-<h3 class="name">
-Wherecloud Inc
-</h3>
-<div class="date">
-<span class="startDate">
-June 2014
-</span>
-<span class="endDate">
-- April 2015
-</span>
-</div>
-</header>
-<div class="item">
-<div class="position">
-Mobile Technology Developer
-</div>
-<div class="website">
-<a href="http://wherecloud.com">http://wherecloud.com</a>
-</div>
-<div class="summary">
-<p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
-</div>
-<ul class="highlights">
-<li>Participate in team meetings to oversee the advancement of projects</li>
-<li>Review, prioritize and execute development tasks in an independent manner</li>
-<li>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</li>
-<li>Implement mobile application solutions</li>
-<li>Working with designers and account managers on a variety of projects</li>
-<li>Provide on-site support for clients.</li>
-<li>Maintain and update Android Apps on the Google Play Store.</li>
-<li>Maintain and update Web Apps.</li>
-<li>Continuous Integration expertise </li>
-</ul>
-</div>
-<header>
-<h3 class="name">
-Solutions Medias 360
-</h3>
-<div class="date">
-<span class="startDate">
-May 2013
-</span>
-<span class="endDate">
-- September 2013
-</span>
-</div>
-</header>
-<div class="item">
-<div class="position">
-Mobile Developer
-</div>
-<div class="website">
-<a href="http://www.solutionsmedias360.com/">http://www.solutionsmedias360.com/</a>
-</div>
-<div class="summary">
-<p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
-</div>
-<ul class="highlights">
-<li>Participate in the creation new Android Apps.</li>
-<li>Write test for web services</li>
-<li>Maintain and update Android Apps on the Google Play Store.</li>
-<li>Maintain and update Web Apps.</li>
-</ul>
-</div>
-<header>
-<h3 class="name">
-Quattriuum
-</h3>
-<div class="date">
-<span class="startDate">
-May 2012
-</span>
-<span class="endDate">
-- May 2013
-</span>
-</div>
-</header>
-<div class="item">
-<div class="position">
-Mobile Developer
-</div>
-<div class="website">
-<a href="http://www.Quattriuum.com/">http://www.Quattriuum.com/</a>
-</div>
-<div class="summary">
-<p>Quattriuum specializes in motion tracking and analysis.</p>
-</div>
-<ul class="highlights">
-<li>Participate in the creation of the FWD Powershot, to measure hockyers performance.</li>
-<li>Create software to record, visualize and extract raw sensor data.</li>
-<li>Integrate cloud technologies and services</li>
-<li>Android bluetooth communication</li>
-<li>Provide tech. support for new prototypes</li>
-<li>Create software documentation</li>
-</ul>
-</div>
-</section>
-</section>
-<section class="section">
-<h2 class='section-title'>Education</h2>
-<section id="education">
-<header>
-<h3 class="institution">
-School of Superior Technology
-</h3>
-<div class="date">
-<span class="startDate">
-2010
-</span>
-<span class="endDate">
-- 2015
-</span>
-</div>
-</header>
-<div class="item">
-<div class="studyType">
-Bachelor
-</div>
-<div class="area">
-Software Engineering
-</div>
-</div>
-<header>
-<h3 class="institution">
-Cegep de St-Hyacinthe
-</h3>
-<div class="date">
-<span class="startDate">
-2006
-</span>
-<span class="endDate">
-- 2010
-</span>
-</div>
-</header>
-<div class="item">
-<div class="studyType">
-Collegiate
-</div>
-<div class="area">
-Information Systems
-</div>
-</div>
-</section>
-</section>
-<section class="section">
-<h2 class='section-title'>Volunteer</h2>
-<section id="volunteer">
-<header>
-<h3 class="company">
-GDG Montreal Android
-</h3>
-<div class="date">
-<span class="startDate">
-April 2017
-</span>
-<span class="endDate">
-- Present
-</span>
-</header>
-<div class="item">
-<div class="position">
-Speaker, Co Organizer
-</div>
-<div class="website">
-<a href="http://android-montreal.com/">http://android-montreal.com/</a>
-</div>
-<div class="summary">
-<p>Organise, present and promote Android development.</p>
-</div>
-</div>
-<header>
-<h3 class="company">
-ApplETS, mobile engineering
-</h3>
-<div class="date">
-<span class="startDate">
-May 2013
-</span>
-<span class="endDate">
-- May 2014
-</span>
-</header>
-<div class="item">
-<div class="position">
-President
-</div>
-<div class="website">
-<a href="http://clubapplets.ca/">http://clubapplets.ca/</a>
-</div>
-<div class="summary">
-<p>Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms.</p>
-</div>
-</div>
-<header>
-<h3 class="company">
-CS Games
-</h3>
-<div class="date">
-<span class="startDate">
-January 2014
-</span>
-<span class="endDate">
-- March 2013
-</span>
-</header>
-<div class="item">
-<div class="position">
-VP Promo
-</div>
-<div class="website">
-<a href="http://csgames.org/">http://csgames.org/</a>
-</div>
-<div class="summary">
-<p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
-</div>
-</div>
-</section>
-</section>
-<section class="section">
-<h2 class='section-title'>Awards</h2>
-<section id="awards">
-<div class="date">
-11 January 2014
-</div>
-<div class="item">
-<div class="title">
-2nd Place, Coveo Blitz 2014
-</div>
-<div class="awarder">
-Coveo Inc
-</div>
-<div class="summary">
-<p>24h Developer Contest.</p>
-</div>
-</div>
-<div class="date">
-23 March 2013
-</div>
-<div class="item">
-<div class="title">
-5th Place, CS Games 2013
-</div>
-<div class="awarder">
-CS Games
-</div>
-<div class="summary">
-<p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing.</p>
-</div>
-</div>
-</section>
-</section>
-<section class="section">
-<h2 class='section-title'>Skills</h2>
-<section id="skills">
-<div class="item">
-<div class="name">
-Web Development
-</div>
-<div class="level master">
-<em>Master</em>
-<div class="bar"></div>
-</div>
-<ul class="keywords">
-<li>HTML5</li>
-<li>Javascript 5/6</li>
-<li>Babel</li>
-<li>NodeJS</li>
-<li>Ruby</li>
-<li>Python</li>
-<li>Rails</li>
-<li>Heroku</li>
-<li>IoT</li>
-<li>React</li>
-<li>React Native</li>
-<li>AWS</li>
-<li>Google Cloud Platform</li>
-<li>PostgreSQL</li>
-<li>Firebase</li>
-<li>Firestore</li>
-<li>Bower</li>
-</ul>
-</div>
-<div class="item">
-<div class="name">
-Android
-</div>
-<div class="level master">
-<em>Master</em>
-<div class="bar"></div>
-</div>
-<ul class="keywords">
-<li>Java 1.8</li>
-<li>Android Studio</li>
-<li>Gradle</li>
-<li>Espresso</li>
-<li>Google Glass</li>
-<li>Android Wear</li>
-<li>Android TV</li>
-<li>Daydream</li>
-<li>Google I/O 2014</li>
-<li>Google I/O 2016</li>
-</ul>
-</div>
-<div class="item">
-<div class="name">
-iOS
-</div>
-<div class="level nooby">
-<em>Nooby</em>
-<div class="bar"></div>
-</div>
-<ul class="keywords">
-<li>Willing to learn</li>
-<li>Swift</li>
-</ul>
-</div>
-</section>
-</section>
-<section class="section">
-<h2 class='section-title'>Languages</h2>
-<section id="languages">
-<div class="item">
-<div class="language">
-English
-</div>
-<div class="fluency">
-<em>Fluent</em>
-</div>
-</div>
-<div class="item">
-<div class="language">
-French
-</div>
-<div class="fluency">
-<em>Langue maternelle</em>
-</div>
-</div>
-</section>
-</section>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script></body>
-</html>
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333;
+}
+.main {
+  padding: 5px;
+}
+.card {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px 0;
+}
+.card-nested {
+  min-height: 0;
+  border-width: 1px 0 0 0;
+}
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
+}
+.card-nested:after {
+  clear: both;
+}
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.background-card {
+  padding: 10px 20px;
+}
+.card-wrapper {
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
+}
+.background-details .detail {
+  display: table;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
+  text-align: center;
+}
+.background-details .detail .info {
+  width: 100%;
+}
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+.current-event {
+  font-size: 8px;
+  color: #5ACE24;
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  left: -10px;
+}
+.mop-wrapper > p:last-child {
+  margin: 0;
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none !important;
+}
+.floating-nav-trigger > [class^="icon-"],
+.floating-nav-trigger [class*=" icon-"],
+.floating-nav-trigger > .close-icon {
+  line-height: 50px;
+}
+.floating-nav-trigger .close-icon {
+  display: none;
+}
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
+}
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
+}
+.floating-nav-trigger.is-open .icon-bars {
+  display: none;
+}
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
+}
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
+}
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
+}
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
+  }
+}
+.profile-card-wrapper .profile-card {
+  padding: 10px;
+}
+.profile-pic {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
+  }
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.link-skype {
+  color: #12A5F4;
+}
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.link-instagram {
+  color: #e4405f;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  text-decoration: none;
+  color: #d31e40;
+}
+.link-stackoverflow {
+  color: #f48024;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #c3661c;
+}
+.link-stackexchange {
+  color: #62b0df;
+}
+.link-stackexchange:hover,
+.link-stackexchange:focus {
+  text-decoration: none;
+  color: #389bd6;
+}
+.link-lastfm {
+  color: #d12127;
+}
+.link-lastfm:hover,
+.link-lastfm:focus {
+  text-decoration: none;
+  color: #a51a1f;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-googleplus {
+  color: #dd4b39;
+}
+.link-googleplus:hover,
+.link-googleplus:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-youtube {
+  color: #dd4b39;
+}
+.link-youtube:hover,
+.link-youtube:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-gratipay {
+  color: #630;
+}
+.link-gratipay:hover,
+.link-gratipay:focus {
+  text-decoration: none;
+  color: #331a00;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-tumblr {
+  color: #2d4661;
+}
+.link-tumblr:hover,
+.link-tumblr:focus {
+  text-decoration: none;
+  color: #1d2d3e;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: black;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.link-hackernews {
+  color: #ff6600;
+}
+.link-hackernews:hover,
+.link-hackernews:focus {
+  text-decoration: none;
+  color: #cc5200;
+}
+.link-exercism {
+  color: #d81d4e;
+}
+.link-exercism:hover,
+.link-exercism:focus {
+  text-decoration: none;
+  color: #ab173e;
+}
+.link-blogger {
+  color: #FF9234;
+}
+.link-blogger:hover,
+.link-blogger:focus {
+  text-decoration: none;
+  color: #ff7701;
+}
+.link-medium {
+  color: #00AB6C;
+}
+.link-medium:hover,
+.link-medium:focus {
+  text-decoration: none;
+  color: #00784c;
+}
+.link-flickr {
+  color: black;
+}
+.link-flickr:hover,
+.link-flickr:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-telegram {
+  color: #3BABDD;
+}
+.link-telegram:hover,
+.link-telegram:focus {
+  text-decoration: none;
+  color: #2291c3;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 15px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+.icon-meetup .path2:before {
+  margin-left: 0;
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li><li><a href="#volunteer-work"><i class="mr-10 icon-child"></i>Volunteer Work</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Philippe David" src="https://s.gravatar.com/avatar/d415f0e30c471dfdd9bc4f827329ef48?s=100&amp;r=pg&amp;d=mm" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Philippe David</b></h3><h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">3600 Park Avenue, Montreal, Quebec, CA, H2X 2R3</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="http://pdavid0.github.io" target="_blank">http://pdavid0.github.io</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, French</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="http://github.com/pdavid0" target="_blank" data-toggle="tooltip" title="Philippe David on github"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab" target="_blank" data-toggle="tooltip" title="Philippe David on linkedin"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Curious, Dreamer, Ingenious.</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Lead Software Engineer</strong>,&nbsp;<a href="https://www.bus.com" target="_blank">Bus.com</a></p><p class="text-muted"><small><span class="space-right">Apr, 2017 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>FullStack, Mobile, DevOps.</p>
+</div><ul><li class="mop-wrapper"><p>Leads teams of 2-4 people that develop, test, and fix defects in application software.</p>
+</li><li class="mop-wrapper"><p>Leads work teams in preparing work estimates and project schedules for all technical work for the projects within the team.</p>
+</li><li class="mop-wrapper"><p>Maintains expert knowledge on the systems and tools within the scope of the team's responsibility. Maintains expert knowledge of the business processes supported by the systems. Maintains expert-level knowledge of software development best practices, tools, and methodologies that are recognized throughout Information Systems.</p>
+</li><li class="mop-wrapper"><p>Oversee the advancement of projects</p>
+</li><li class="mop-wrapper"><p>Review, prioritize and execute development tasks in an independent manner</p>
+</li><li class="mop-wrapper"><p>Leads teams focused on quality and continuous improvement initiatives across business units within the company.</p>
+</li><li class="mop-wrapper"><p>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</p>
+</li><li class="mop-wrapper"><p>Implement mobile application solutions</p>
+</li><li class="mop-wrapper"><p>Lead the mobile software development project</p>
+</li><li class="mop-wrapper"><p>Mentored junior Developer on their careers and technical abilities</p>
+</li><li class="mop-wrapper"><p>Maintain and update FullStack Web Apps</p>
+</li><li class="mop-wrapper"><p>Continuous Integration</p>
+</li><li class="mop-wrapper"><p>Continuous Distribution</p>
+</li><li class="mop-wrapper"><p>https://play.google.com/store/apps/details?id=com.bus.consumer</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Android Developer</strong>,&nbsp;<a href="https://play.google.com/store/apps/details?id=com.ypg.dine&amp;hl=fr_CA" target="_blank">Yellow Pages Group</a></p><p class="text-muted"><small><span class="space-right">Apr, 2015 - Apr, 2017</span><span><i class="icon-clock mr-5"></i>2 years</span></small></p><div class="mop-wrapper space-bottom"><p>YP Dine Android</p>
+</div><ul><li class="mop-wrapper"><p>Participate in team meetings to oversee the advancement of projects</p>
+</li><li class="mop-wrapper"><p>Review, prioritize and execute development tasks in an independent manner</p>
+</li><li class="mop-wrapper"><p>Implement mobile application solutions</p>
+</li><li class="mop-wrapper"><p>Continuous Integration expertise</p>
+</li><li class="mop-wrapper"><p>Mentored junior Developer</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>CTO</strong>,&nbsp;<a href="https://brumelance.herokuapp.com" target="_blank">Brume Lance</a></p><p class="text-muted"><small><span class="space-right">Oct, 2015 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>Custom CMS to manage LARP events. Transform a rulebook into a Web App.</p>
+</div><ul><li class="mop-wrapper"><p>Full stack dev.</p>
+</li><li class="mop-wrapper"><p>DevOps</p>
+</li><li class="mop-wrapper"><p>Designer</p>
+</li><li class="mop-wrapper"><p>System Architecture</p>
+</li><li class="mop-wrapper"><p>Cost planning</p>
+</li><li class="mop-wrapper"><p>On site deployment and maintenance</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Technology Developer</strong>,&nbsp;<a href="http://wherecloud.com" target="_blank">Wherecloud Inc</a></p><p class="text-muted"><small><span class="space-right">Jun, 2014 - Apr, 2015</span><span><i class="icon-clock mr-5"></i>10 months</span></small></p><div class="mop-wrapper space-bottom"><p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
+</div><ul><li class="mop-wrapper"><p>Participate in team meetings to oversee the advancement of projects</p>
+</li><li class="mop-wrapper"><p>Review, prioritize and execute development tasks in an independent manner</p>
+</li><li class="mop-wrapper"><p>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</p>
+</li><li class="mop-wrapper"><p>Implement mobile application solutions</p>
+</li><li class="mop-wrapper"><p>Working with designers and account managers on a variety of projects</p>
+</li><li class="mop-wrapper"><p>Provide on-site support for clients.</p>
+</li><li class="mop-wrapper"><p>Maintain and update Android Apps on the Google Play Store.</p>
+</li><li class="mop-wrapper"><p>Maintain and update Web Apps.</p>
+</li><li class="mop-wrapper"><p>Continuous Integration expertise</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;<a href="http://www.solutionsmedias360.com/" target="_blank">Solutions Medias 360</a></p><p class="text-muted"><small><span class="space-right">May, 2013 - Sep, 2013</span><span><i class="icon-clock mr-5"></i>4 months</span></small></p><div class="mop-wrapper space-bottom"><p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
+</div><ul><li class="mop-wrapper"><p>Participate in the creation new Android Apps.</p>
+</li><li class="mop-wrapper"><p>Write test for web services</p>
+</li><li class="mop-wrapper"><p>Maintain and update Android Apps on the Google Play Store.</p>
+</li><li class="mop-wrapper"><p>Maintain and update Web Apps.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;<a href="http://www.Quattriuum.com/" target="_blank">Quattriuum</a></p><p class="text-muted"><small><span class="space-right">May, 2012 - May, 2013</span><span><i class="icon-clock mr-5"></i>1 year</span></small></p><div class="mop-wrapper space-bottom"><p>Quattriuum specializes in motion tracking and analysis.</p>
+</div><ul><li class="mop-wrapper"><p>Participate in the creation of the FWD Powershot, to measure hockyers performance.</p>
+</li><li class="mop-wrapper"><p>Create software to record, visualize and extract raw sensor data.</p>
+</li><li class="mop-wrapper"><p>Integrate cloud technologies and services</p>
+</li><li class="mop-wrapper"><p>Android bluetooth communication</p>
+</li><li class="mop-wrapper"><p>Provide tech. support for new prototypes</p>
+</li><li class="mop-wrapper"><p>Create software documentation</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Web Development</strong><div class="space-top labels"><span class="label label-keyword">HTML5</span><span class="label label-keyword">CSS3</span><span class="label label-keyword">Babel</span><span class="label label-keyword">ES6</span><span class="label label-keyword">NodeJS</span><span class="label label-keyword">Ruby</span><span class="label label-keyword">Python</span><span class="label label-keyword">Rails</span><span class="label label-keyword">Heroku</span><span class="label label-keyword">IoT</span><span class="label label-keyword">CoffeScript</span><span class="label label-keyword">React</span><span class="label label-keyword">React Native</span><span class="label label-keyword">AWS</span><span class="label label-keyword">S3</span><span class="label label-keyword">Redis</span><span class="label label-keyword">Google Cloud Platform</span><span class="label label-keyword">PostgreSQL</span><span class="label label-keyword">MySQL</span><span class="label label-keyword">Firebase</span><span class="label label-keyword">Firestore</span><span class="label label-keyword">Bower</span><span class="label label-keyword">PWA</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Android</strong><div class="space-top labels"><span class="label label-keyword">Java 1.8</span><span class="label label-keyword">Android Studio</span><span class="label label-keyword">Android Things</span><span class="label label-keyword">Android TV</span><span class="label label-keyword">Gradle</span><span class="label label-keyword">Espresso</span><span class="label label-keyword">Firebase</span><span class="label label-keyword">NoSQL</span><span class="label label-keyword">Instant Apps</span><span class="label label-keyword">BlueTooth</span><span class="label label-keyword">Flutter</span><span class="label label-keyword">Google Glass</span><span class="label label-keyword">Daydream</span><span class="label label-keyword">Kotlin</span><span class="label label-keyword">WearOS</span><span class="label label-keyword">Google I/O 2014</span><span class="label label-keyword">Google I/O 2016</span><span class="label label-keyword">Google I/O 2017</span><span class="label label-keyword">Google I/O 2018</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>iOS</strong><div class="space-top labels"><span class="label label-keyword">Willing to learn</span><span class="label label-keyword">Swift</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Software Engineering, Bachelor,&nbsp;</strong>School of Superior Technology</p><p class="text-muted clear-margin"><small>Sep, 2010 - May, 2015</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Information Systems, Collegiate,&nbsp;</strong>Cegep de St-Hyacinthe</p><p class="text-muted clear-margin"><small>Sep, 2006 - Sep, 2010</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="awards"><div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div><div class="info"><h4 class="title text-uppercase">Awards</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>2nd Place, Coveo Blitz 2014 </strong>Coveo Inc</p><p class="text-muted"><small>Awarded on: Jan 11, 2014</small></p><div class="mop-wrapper"><p>24h Developer Contest.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>5th Place, CS Games 2013 </strong>CS Games</p><p class="text-muted"><small>Awarded on: Mar 23, 2013</small></p><div class="mop-wrapper"><p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing.</p>
+</div></div></li></ul></div></div></div><div class="detail" id="volunteer-work"><div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div><div class="info"><h4 class="title text-uppercase">Volunteer Work</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Volunteering" data-placement="left"></i><strong>Speaker, Co-Organizer, </strong><a href="http://android-montreal.com/" target="_blank">GDG Montreal Android</a></p><p class="text-muted"><small>Apr, 2017 - Present</small></p><div class="mop-wrapper"><p>Organise, present, teach and promote Android development.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>President, </strong><a href="http://clubapplets.ca/" target="_blank">ApplETS, mobile engineering</a></p><p class="text-muted"><small>May, 2013 - May, 2014</small></p><div class="mop-wrapper"><p>Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>VP Promo, </strong><a href="http://csgames.org/" target="_blank">CS Games</a></p><p class="text-muted"><small>Jan, 2014 - Mar, 2013</small></p><div class="mop-wrapper"><p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
+</div></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+  var toggleFloatingMenu = function() {
+    $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+    $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+  };
+
+  $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+  $( "[data-toggle=tooltip]" ).tooltip();
+  $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+    e.preventDefault();
+    toggleFloatingMenu();
+  });
+  $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+
+  $("#remaining-profiles").on('show.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-down' )
+      .addClass( 'icon-chevron-up' );
+  });
+
+  $("#remaining-profiles").on('hidden.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-up' )
+      .addClass( 'icon-chevron-down' );
+  });
+});
+</script><script>WebFontConfig = {
+  google: { families: [ 'Lato:300,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script></body></html>
