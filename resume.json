@@ -2,225 +2,356 @@
   "basics": {
     "name": "Philippe David",
     "label": "Software Engineer",
-    "website": "http://pdavid0.github.io",
+    "url": "http://pdavid0.github.io",
     "summary": "Creative, Curious, Dreamer, Ingenious.",
     "location": {
-      "address": "3600 Park Avenue",
-      "postalCode": "H2X 2R3",
-      "city": "Montreal",
+      "address": "Quebec City",
+      "postalCode": "",
+      "city": "Quebec",
       "countryCode": "CA",
       "region": "Quebec"
     },
-    "profiles": [{
-      "network": "github",
-      "username": "pdavid0",
-      "url": "http://github.com/pdavid0"
-    }, {
-      "network": "linkedin",
-      "username": "philippe-david",
-      "url": "https://www.linkedin.com/pub/philippe-david/24/8b9/4ab"
-    }]
+    "profiles": [
+      {
+        "network": "github",
+        "username": "pdavid0",
+        "url": "http://github.com/pdavid0"
+      },
+      {
+        "network": "linkedin",
+        "username": "Philippe David",
+        "url": "https://www.linkedin.com/pub/philippe-david/24/8b9/4ab"
+      }
+    ]
   },
-  "work": [{
-    "company": "Bus.com",
-    "position": "Lead Software Engineer",
-    "website": "https://www.bus.com",
-    "app": "https://www.bus.com",
-    "startDate": "2017-04-27",
-    "summary": "FullStack, Mobile, DevOps.",
-    "highlights": [
-      "Leads teams of 2-4 people that develop, test, and fix defects in application software.",
-      "Leads work teams in preparing work estimates and project schedules for all technical work for the projects within the team.",
-      "Maintains expert knowledge on the systems and tools within the scope of the team's responsibility. Maintains expert knowledge of the business processes supported by the systems. Maintains expert-level knowledge of software development best practices, tools, and methodologies that are recognized throughout Information Systems.",
-      "Oversee the advancement of projects",
-      "Review, prioritize and execute development tasks in an independent manner",
-      "Leads teams focused on quality and continuous improvement initiatives across business units within the company.",
-      "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
-      "Implement mobile application solutions",
-      "Lead the mobile software development project",
-      "Mentored junior Developer on their careers and technical abilities",
-      "Maintain and update FullStack Web Apps",
-      "Continuous Integration",
-      "Continuous Distribution",
-      "https://play.google.com/store/apps/details?id=com.bus.consumer"
-    ]
-  }, {
-    "company": "Yellow Pages Group",
-    "position": "Senior Android Developer",
-    "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
-    "startDate": "2015-04-27",
-    "endDate": "2017-04-27",
-    "summary": "YP Dine Android",
-    "highlights": [
-      "Participate in team meetings to oversee the advancement of projects",
-      "Review, prioritize and execute development tasks in an independent manner",
-      "Implement mobile application solutions",
-      "Continuous Integration expertise",
-      "Mentored junior Developer"
-    ]
-  }, {
-    "company": "Brume Lance",
-    "position": "CTO",
-    "website": "https://brumelance.herokuapp.com",
-    "startDate": "2015-10-31",
-
-    "summary": "Custom CMS to manage LARP events. Transform a rulebook into a Web App.",
-    "highlights": [
-      "Full stack dev.",
-      "DevOps",
-      "Designer",
-      "System Architecture",
-      "Cost planning",
-      "On site deployment and maintenance"
-    ]
-  }, {
-    "company": "Wherecloud Inc",
-    "position": "Mobile Technology Developer",
-    "website": "http://wherecloud.com",
-    "startDate": "2014-06-16",
-    "endDate": "2015-04-27",
-    "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
-    "highlights": [
-      "Participate in team meetings to oversee the advancement of projects",
-      "Review, prioritize and execute development tasks in an independent manner",
-      "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
-      "Implement mobile application solutions",
-      "Working with designers and account managers on a variety of projects",
-      "Provide on-site support for clients.",
-      "Maintain and update Android Apps on the Google Play Store.",
-      "Maintain and update Web Apps.",
-      "Continuous Integration expertise "
-    ]
-  }, {
-    "company": "Solutions Medias 360",
-    "position": "Mobile Developer",
-    "website": "http://www.solutionsmedias360.com/",
-    "startDate": "2013-05-01",
-    "endDate": "2013-09-01",
-    "summary": "The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.",
-    "highlights": [
-      "Participate in the creation new Android Apps.",
-      "Write test for web services",
-      "Maintain and update Android Apps on the Google Play Store.",
-      "Maintain and update Web Apps."
-    ]
-  }, {
-    "company": "Quattriuum",
-    "position": "Mobile Developer",
-    "website": "http://www.Quattriuum.com/",
-    "startDate": "2012-05-01",
-    "endDate": "2013-05-01",
-    "summary": "Quattriuum specializes in motion tracking and analysis.",
-    "highlights": [
-      "Participate in the creation of the FWD Powershot, to measure hockyers performance.",
-      "Create software to record, visualize and extract raw sensor data.",
-      "Integrate cloud technologies and services",
-      "Android bluetooth communication",
-      "Provide tech. support for new prototypes",
-      "Create software documentation"
-    ]
-  }],
-  "volunteer": [{
-    "organization": "GDG Montreal Android",
-    "position": "Speaker, Co-Organizer",
-    "website": "http://android-montreal.com/",
-    "startDate": "2017-04-01",
-    "summary": "Organise, present, teach and promote Android development."
-  }, {
-    "organization": "ApplETS, mobile engineering",
-    "position": "President",
-    "website": "http://clubapplets.ca/",
-    "startDate": "2013-05-08",
-    "endDate": "2014-05-25",
-    "summary": "Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms."
-  }, {
-    "organization": "Brumelance - LARP Events",
-    "position": "IT Elf",
-    "website": "http://brumelance.com/",
-    "startDate": "2016-01-01",
-    "summary": "IT in the woods. Come, we have wifi (almost)!"
-  }, {
-    "organization": "CS Games",
-    "position": "VP Promo",
-    "website": "http://csgames.org/",
-    "startDate": "2014-01-01",
-    "endDate": "2013-03-23",
-    "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges."
-  }],
-  "education": [{
-    "institution": "School of Superior Technology",
-    "area": "Software Engineering",
-    "studyType": "Bachelor",
-    "startDate": "2010-09-01",
-    "endDate": "2015-05-20"
-  }, {
-    "institution": "Cegep de St-Hyacinthe",
-    "area": "Information Systems",
-    "studyType": "Collegiate",
-    "startDate": "2006-09-01",
-    "endDate": "2010-09-01"
-  }],
-  "awards": [{
-    "title": "2nd Place, Coveo Blitz 2014",
-    "date": "2014-01-11",
-    "awarder": "Coveo Inc",
-    "summary": "24h Developer Contest."
-  }, {
-    "title": "5th Place, CS Games 2013",
-    "date": "2013-03-23",
-    "awarder": "CS Games",
-    "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing."
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML5", "CSS3",
-      "Babel", "ES6",
-      "NodeJS", "Ruby",
-      "Python", "Rails",
-      "Heroku", "IoT",
-      "CoffeScript",
-      "React", "React Native",
-      "AWS", "S3", "Redis",
-      "Google Cloud Platform",
-      "PostgreSQL", "MySQL",
-      "Firebase", "Firestore",
-      "Bower", "PWA"
-    ]
-  }, {
-    "name": "Android",
-    "level": "Master",
-    "keywords": [
-      "Java 1.8",
-      "Android Studio",
-      "Android Things",
-      "Android TV",
-      "Gradle", "Espresso",
-      "Firebase", "NoSQL",
-      "Instant Apps", "BlueTooth",
-      "Flutter",
-      "Google Glass",
-      "Daydream",
-      "Kotlin",
-      "WearOS",
-      "Google I/O 2014",
-      "Google I/O 2016",
-      "Google I/O 2017",
-      "Google I/O 2018"
-    ]
-  }, {
-    "name": "iOS",
-    "level": "Nooby",
-    "keywords": [
-      "Willing to learn", "Swift"
-    ]
-  }],
-  "languages": [{
-    "language": "English",
-    "fluency": "Fluent"
-  }, {
-    "language": "French",
-    "fluency": "Langue maternelle"
-  }]
+  "work": [
+    {
+      "company": "Bus.com",
+      "position": "Software Development Manager",
+      "website": "https://www.bus.com",
+      "app": "https://www.bus.com",
+      "startDate": "2019-04-27",
+      "endDate": "2022-07-01",
+      "summary": "FullStack, Mobile, DevOps.",
+      "highlights": [
+        "Developing, troubleshooting, analyzing, and testing software programs",
+        "Assisting in the documentation of requirements",
+        "Managing primary web development vendors",
+        "Providing training to new hires",
+        "Create operational manuals for users, clients, and team members",
+        "Presenting ideas for development and improvement of the company’s product",
+        "Assisting in the development of software applications",
+        "Determine the scope and expectation of software development projects",
+        "Knowledge of Agile development methodologies",
+        "Strong organization and time-management skills",
+        "Strong verbal and written communication skills",
+        "Keen attention to detail",
+        "Ability to analyze problems and find solutions",
+        "Collaborate with marketing teams, as well as direct partners in product, insights, and design to uncover the next growth opportunity within owned and new features",
+        "Lead and manage a team of mobile, web and backend engineers through hiring, coaching, mentoring, feedback, and hands-on career development",
+        "Grow a healthy, collaborative engineering culture in line with our Spotify values and build technical expertise amongst the team",
+        "Effectively facilitate and bridge collaboration with cross-discipline partners to solve exciting and high-reaching problems",
+        "Drive forward technical initiatives within your team, and look to introduce new opportunities by way of A/B testing",
+        "Ensure the team has an established tech strategy and prioritization of tech excellence",
+        "Cultivate agile methodologies and champion a culture of sustainable tech health"
+      ]
+    },
+    {
+      "company": "Bus.com",
+      "position": "Lead Software Engineer",
+      "website": "https://www.bus.com",
+      "app": "https://www.bus.com",
+      "startDate": "2017-04-27",
+      "summary": "FullStack, React, Redux, React Native, DevOps.",
+      "highlights": [
+        "Leads teams of 2-4 people that develop, test, and fix defects in application software.",
+        "Prepare work estimates and project schedules for all technical work for the projects within the team.",
+        "Maintains expert knowledge on the systems and tools within the scope of the team's responsibility. Maintains expert knowledge of the business processes supported by the systems. Maintains expert-level knowledge of software development best practices, tools, and methodologies that are recognized throughout Information Systems.",
+        "Oversee the advancement of projects",
+        "Review, prioritize and execute development tasks in an independent manner",
+        "Leads teams focused on quality and continuous improvement initiatives across business units within the company.",
+        "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+        "Implement mobile application solutions",
+        "Lead the mobile software development project",
+        "Mentored junior Developer on their careers and technical abilities",
+        "Maintain and update FullStack Web Apps",
+        "Continuous Integration (CI)",
+        "Continuous Distribution (CD)"
+      ]
+    },
+    {
+      "company": "Yellow Pages Group",
+      "position": "Senior Android Developer",
+      "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
+      "startDate": "2015-04-27",
+      "endDate": "2017-04-27",
+      "summary": "YP Dine Android",
+      "highlights": [
+        "Strong knowledge of Android SDK, different versions of Android, and how to deal with different screen sizes",
+        "Familiarity with RESTful APIs to connect Android applications to back-end services",
+        "Strong knowledge of Android UI design principles, patterns, and best practices",
+        "Experience with offline storage, threading, and performance tuning",
+        "Ability to design applications around natural user interfaces, such as “touch”",
+        "Familiarity with the use of additional sensors, such as gyroscopes and accelerometers",
+        "Knowledge of the open-source Android ecosystem and the libraries available for common tasks",
+        "Ability to understand business requirements and translate them into technical requirements",
+        "Familiarity with cloud message APIs and push notifications",
+        "A knack for benchmarking and optimization",
+        "Understanding of Google’s Android design principles and interface guidelines",
+        "Continuous Integration expertise",
+        "Mentored junior Developer"
+      ]
+    },
+    {
+      "company": "Wherecloud Inc",
+      "position": "Mobile Developer",
+      "website": "http://wherecloud.com",
+      "startDate": "2014-06-16",
+      "endDate": "2015-04-27",
+      "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
+      "highlights": [
+        "Participate in team meetings to oversee the advancement of projects",
+        "Review, prioritize and execute development tasks in an independent manner",
+        "Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise",
+        "Implement mobile application solutions",
+        "Working with designers and account managers on a variety of projects",
+        "Provide on-site support for clients.",
+        "Maintain and update Android Apps on the Google Play Store.",
+        "Maintain and update Web Apps.",
+        "Continuous Integration expertise "
+      ]
+    },
+    {
+      "company": "Solutions Medias 360",
+      "position": "Mobile Developer",
+      "website": "http://www.solutionsmedias360.com/",
+      "startDate": "2013-05-01",
+      "endDate": "2013-09-01",
+      "summary": "The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.",
+      "highlights": [
+        "Participate in the creation new Android Apps.",
+        "Write test for web services",
+        "Maintain and update Android Apps on the Google Play Store.",
+        "Maintain and update Web Apps."
+      ]
+    },
+    {
+      "company": "Quattriuum",
+      "position": "Mobile Developer",
+      "website": "http://www.Quattriuum.com/",
+      "startDate": "2012-05-01",
+      "endDate": "2013-05-01",
+      "summary": "Quattriuum specializes in motion tracking and analysis.",
+      "highlights": [
+        "Participate in the creation of the FWD Powershot, to measure hockyers performance.",
+        "Create software to record, visualize and extract raw sensor data.",
+        "Integrate cloud technologies and services",
+        "Android bluetooth communication",
+        "Provide tech. support for new prototypes",
+        "Create software documentation"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "GDG Montreal Android",
+      "position": "Speaker, Co-Organizer",
+      "website": "https://android-montreal.com/",
+      "startDate": "2017-04-01",
+      "summary": "Organise, present, teach and promote Android development."
+    },
+    {
+      "organization": "ApplETS, mobile engineering",
+      "position": "President",
+      "website": "http://clubapplets.ca/",
+      "startDate": "2013-05-08",
+      "endDate": "2014-05-25",
+      "summary": "Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms."
+    },
+    {
+      "organization": "CS Games",
+      "position": "VP Promo",
+      "website": "http://csgames.org/",
+      "startDate": "2014-01-01",
+      "endDate": "2013-03-23",
+      "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges."
+    }
+  ],
+  "education": [
+    {
+      "institution": "École de Technologie Supérieure",
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2010-09-01",
+      "endDate": "2015-05-20"
+    },
+    {
+      "institution": "Cegep de St-Hyacinthe",
+      "area": "Information Systems",
+      "studyType": "Collegiate",
+      "startDate": "2006-09-01",
+      "endDate": "2010-09-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "2nd Place, Coveo Blitz 2014",
+      "date": "2014-01-11",
+      "awarder": "Coveo Inc",
+      "summary": "24h Developer Contest."
+    },
+    {
+      "title": "5th Place, CS Games 2013",
+      "date": "2013-03-23",
+      "awarder": "CS Games",
+      "summary": "The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "ES6",
+        "Babel",
+        "esbuild",
+        "NodeJS",
+        "Ruby on Rails",
+        "Django",
+        "CoffeeScript",
+        "React",
+        "React Native",
+        "SQL",
+        "NOSQL",
+        "REST API",
+        "GraphQL",
+        "Bower",
+        "PWA"
+      ]
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "Master",
+      "keywords": [
+        "Docker",
+        "AWS",
+        "AWS - S3",
+        "AWS - Route53",
+        "AWS - EC2",
+        "Heroku",
+        "Heroku Dyno",
+        "Heroku Postgres",
+        "Heroku REDIS",
+        "Google Cloud Platform"
+      ]
+    },
+    {
+      "name": "Android",
+      "level": "Advanced",
+      "keywords": [
+        "Java 1.8",
+        "Kotlin",
+        "Flutter",
+        "Android Studio",
+        "Android Things",
+        "Android TV",
+        "Gradle",
+        "Firebase",
+        "NoSQL",
+        "Instant Apps",
+        "BlueTooth",
+        "Google Glass",
+        "Daydream",
+        "WearOS",
+        "Google I/O 2014",
+        "Google I/O 2016",
+        "Google I/O 2017",
+        "Google I/O 2018",
+        "Google I/O 2019"
+      ]
+    },
+    {
+      "name": "iOS",
+      "level": "Beginner",
+      "keywords": [
+        "Willing to learn",
+        "Swift"
+      ]
+    },
+    {
+      "name": "Game Dev",
+      "level": "Beginner",
+      "keywords": [
+        "C#",
+        "Unity",
+        "Unreal Engine",
+        "Blender",
+        "3D Modelling",
+        "3D Rendering"
+      ]
+    },
+    {
+      "name": "Embedded",
+      "level": "Beginner",
+      "keywords": [
+        "Arduino",
+        "ESP32",
+        "Soldering",
+        "C++",
+        "IoT"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Vampire The Mascarade CMS",
+      "description": "Vampire The Mascarade web application",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JS",
+        "React"
+      ],
+      "startDate": "2022-01-01",
+      "url": "https://www.elazar.ca/",
+      "roles": [
+        "CTO",
+        "Advisor"
+      ],
+      "entity": "Le Projet",
+      "type": "application"
+    },
+    {
+      "name": "Brumelance - LARP CMS",
+      "roles": [
+        "CTO"
+      ],
+      "url": "https://www.brumelance.com/",
+      "startDate": "2015-10-31",
+      "endDate": "2018-10-31",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JS",
+        "jQuery",
+        "DBMS",
+        "SQL"
+      ],
+      "entity": "Brumelance",
+      "type": "application",
+      "description": "Custom CMS to manage LARP events. Transform a rulebook into a Web App."
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Langue maternelle"
+    }
+  ]
 }

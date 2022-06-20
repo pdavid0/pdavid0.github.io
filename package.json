@@ -1,6 +1,6 @@
 {
   "name": "pdavid0-resume",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "build": "npm run build-index && npm run build-png",
     "build-pdf": "./bin/wkhtmltopdf --viewport-size 1920x1080 --page-size A4 -T 0 -B 0 -L 0 -R 0 index.html resume.pdf",

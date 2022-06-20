@@ -1,10 +1,10 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Philippe David</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /><style>@font-face {
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Philippe David</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9yug7q');
-  src:  url('fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9yug7q') format('truetype'),
-    url('fonts/icomoon.woff?9yug7q') format('woff'),
-    url('fonts/icomoon.svg?9yug7q#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?z1lat9');
+  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
+    url('fonts/icomoon.woff?z1lat9') format('woff'),
+    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,20 +24,64 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
-  content: "\e905";
+.icon-gitlab .path1:before {
+  content: "\e906";
+  color: rgb(252, 109, 38);
 }
-.icon-trophy:before {
-  content: "\e605";
+.icon-gitlab .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
 }
-.icon-office:before {
-  content: "\e606";
+.icon-gitlab .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
 }
-.icon-clock:before {
-  content: "\e60a";
+.icon-gitlab .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
 }
-.icon-reddit:before {
-  content: "\e609";
+.icon-gitlab .path5:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path6:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path7:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path8:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
+.icon-exercism:before {
+  content: "\e601";
 }
 .icon-telegram:before {
   content: "\e904";
@@ -147,25 +191,20 @@
 .icon-facebook:before {
   content: "\f230";
 }
-.icon-meetup .path1:before {
-  content: "\e901";
-  color: rgb(255, 255, 255);
+.icon-instagram:before {
+  content: "\e905";
 }
-.icon-meetup .path2:before {
-  content: "\e902";
-  margin-left: -1.5em;
-  color: rgb(240, 1, 1);
+.icon-trophy:before {
+  content: "\e605";
 }
-.icon-meetup .path3:before {
-  content: "\e903";
-  margin-left: -1.5em;
-  color: rgb(3, 3, 3);
+.icon-office:before {
+  content: "\e606";
 }
-.icon-blogger:before {
-  content: "\e900";
+.icon-clock:before {
+  content: "\e60a";
 }
-.icon-exercism:before {
-  content: "\e601";
+.icon-reddit:before {
+  content: "\e609";
 }
 .icon-profile:before {
   content: "\e600";
@@ -185,12 +224,6 @@
 .icon-newspaper:before {
   content: "\e607";
 }
-.icon-dots-three-horizontal:before {
-  content: "\e60b";
-}
-.icon-thumbs-up:before {
-  content: "\e604";
-}
 .icon-chevron-down:before {
   content: "\e60c";
 }
@@ -206,7 +239,6 @@
 .icon-board:before {
   content: "\e608";
 }
-
 
 .relative {
   position: relative;
@@ -247,6 +279,15 @@
 .label-keyword:last-child {
   margin-right: 0;
 }
+.label-keyword p {
+  margin: 0;
+}
+.label-keyword a {
+  color: white;
+}
+.label-keyword a:hover {
+  text-decoration: none;
+}
 .link-disguise {
   color: inherit;
 }
@@ -263,7 +304,7 @@
 }
 .fs-lg {
   font-size: 1.33333333em;
-  line-height: .75em;
+  line-height: 0.75em;
   vertical-align: -15%;
 }
 .fs-2x {
@@ -284,10 +325,11 @@
   padding: 0;
   outline: none !important;
 }
+/* the version when the icon file is last updated */
 @font-face {
   font-family: 'jst-elegant';
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo");
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -672,12 +714,12 @@ body {
   color: #d31e40;
 }
 .link-stackoverflow {
-  color: #f48024;
+  color: #8e8e92;
 }
 .link-stackoverflow:hover,
 .link-stackoverflow:focus {
   text-decoration: none;
-  color: #c3661c;
+  color: #747479;
 }
 .link-stackexchange {
   color: #62b0df;
@@ -958,10 +1000,31 @@ body {
     page-break-before: always;
   }
 }
-</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li><li><a href="#volunteer-work"><i class="mr-10 icon-child"></i>Volunteer Work</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Philippe David" src="https://s.gravatar.com/avatar/d415f0e30c471dfdd9bc4f827329ef48?s=100&amp;r=pg&amp;d=mm" itemprop="image" /></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Philippe David</b></h3><h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5></div></span><hr /><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">3600 Park Avenue, Montreal, Quebec, CA, H2X 2R3</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="http://pdavid0.github.io" target="_blank">http://pdavid0.github.io</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, French</span></div></div><hr /><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="http://github.com/pdavid0" target="_blank" data-toggle="tooltip" title="Philippe David on github"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab" target="_blank" data-toggle="tooltip" title="Philippe David on linkedin"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr /><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Creative, Curious, Dreamer, Ingenious.</p>
-</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Lead Software Engineer</strong>,&nbsp;<a href="https://www.bus.com" target="_blank">Bus.com</a></p><p class="text-muted"><small><span class="space-right">Apr, 2017 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>FullStack, Mobile, DevOps.</p>
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#projects-experience"><i class="mr-10 icon-code"></i>Projects Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li><li><a href="#volunteer-work"><i class="mr-10 icon-child"></i>Volunteer Work</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Philippe David" src="https://s.gravatar.com/avatar/d415f0e30c471dfdd9bc4f827329ef48?s=100&amp;r=pg&amp;d=mm" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Philippe David</b></h3><h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Quebec City, Quebec, Quebec, CA</span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">English, French</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-github icon-github" href="http://github.com/pdavid0" target="_blank" data-toggle="tooltip" title="Philippe David on github"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/pub/philippe-david/24/8b9/4ab" target="_blank" data-toggle="tooltip" title="Philippe David on linkedin"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Creative, Curious, Dreamer, Ingenious.</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Software Development Manager</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Apr, 2019 - Jul, 2022</span><span><i class="icon-clock mr-5"></i>3 years 2 months</span></small></p><div class="mop-wrapper space-bottom"><p>FullStack, Mobile, DevOps.</p>
+</div><ul><li class="mop-wrapper"><p>Developing, troubleshooting, analyzing, and testing software programs</p>
+</li><li class="mop-wrapper"><p>Assisting in the documentation of requirements</p>
+</li><li class="mop-wrapper"><p>Managing primary web development vendors</p>
+</li><li class="mop-wrapper"><p>Providing training to new hires</p>
+</li><li class="mop-wrapper"><p>Create operational manuals for users, clients, and team members</p>
+</li><li class="mop-wrapper"><p>Presenting ideas for development and improvement of the company’s product</p>
+</li><li class="mop-wrapper"><p>Assisting in the development of software applications</p>
+</li><li class="mop-wrapper"><p>Determine the scope and expectation of software development projects</p>
+</li><li class="mop-wrapper"><p>Knowledge of Agile development methodologies</p>
+</li><li class="mop-wrapper"><p>Strong organization and time-management skills</p>
+</li><li class="mop-wrapper"><p>Strong verbal and written communication skills</p>
+</li><li class="mop-wrapper"><p>Keen attention to detail</p>
+</li><li class="mop-wrapper"><p>Ability to analyze problems and find solutions</p>
+</li><li class="mop-wrapper"><p>Collaborate with marketing teams, as well as direct partners in product, insights, and design to uncover the next growth opportunity within owned and new features</p>
+</li><li class="mop-wrapper"><p>Lead and manage a team of mobile, web and backend engineers through hiring, coaching, mentoring, feedback, and hands-on career development</p>
+</li><li class="mop-wrapper"><p>Grow a healthy, collaborative engineering culture in line with our Spotify values and build technical expertise amongst the team</p>
+</li><li class="mop-wrapper"><p>Effectively facilitate and bridge collaboration with cross-discipline partners to solve exciting and high-reaching problems</p>
+</li><li class="mop-wrapper"><p>Drive forward technical initiatives within your team, and look to introduce new opportunities by way of A/B testing</p>
+</li><li class="mop-wrapper"><p>Ensure the team has an established tech strategy and prioritization of tech excellence</p>
+</li><li class="mop-wrapper"><p>Cultivate agile methodologies and champion a culture of sustainable tech health</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Lead Software Engineer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Apr, 2017 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>FullStack, React, Redux, React Native, DevOps.</p>
 </div><ul><li class="mop-wrapper"><p>Leads teams of 2-4 people that develop, test, and fix defects in application software.</p>
-</li><li class="mop-wrapper"><p>Leads work teams in preparing work estimates and project schedules for all technical work for the projects within the team.</p>
+</li><li class="mop-wrapper"><p>Prepare work estimates and project schedules for all technical work for the projects within the team.</p>
 </li><li class="mop-wrapper"><p>Maintains expert knowledge on the systems and tools within the scope of the team's responsibility. Maintains expert knowledge of the business processes supported by the systems. Maintains expert-level knowledge of software development best practices, tools, and methodologies that are recognized throughout Information Systems.</p>
 </li><li class="mop-wrapper"><p>Oversee the advancement of projects</p>
 </li><li class="mop-wrapper"><p>Review, prioritize and execute development tasks in an independent manner</p>
@@ -971,23 +1034,23 @@ body {
 </li><li class="mop-wrapper"><p>Lead the mobile software development project</p>
 </li><li class="mop-wrapper"><p>Mentored junior Developer on their careers and technical abilities</p>
 </li><li class="mop-wrapper"><p>Maintain and update FullStack Web Apps</p>
-</li><li class="mop-wrapper"><p>Continuous Integration</p>
-</li><li class="mop-wrapper"><p>Continuous Distribution</p>
-</li><li class="mop-wrapper"><p>https://play.google.com/store/apps/details?id=com.bus.consumer</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Android Developer</strong>,&nbsp;<a href="https://play.google.com/store/apps/details?id=com.ypg.dine&amp;hl=fr_CA" target="_blank">Yellow Pages Group</a></p><p class="text-muted"><small><span class="space-right">Apr, 2015 - Apr, 2017</span><span><i class="icon-clock mr-5"></i>2 years</span></small></p><div class="mop-wrapper space-bottom"><p>YP Dine Android</p>
-</div><ul><li class="mop-wrapper"><p>Participate in team meetings to oversee the advancement of projects</p>
-</li><li class="mop-wrapper"><p>Review, prioritize and execute development tasks in an independent manner</p>
-</li><li class="mop-wrapper"><p>Implement mobile application solutions</p>
+</li><li class="mop-wrapper"><p>Continuous Integration (CI)</p>
+</li><li class="mop-wrapper"><p>Continuous Distribution (CD)</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Android Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Apr, 2015 - Apr, 2017</span><span><i class="icon-clock mr-5"></i>2 years</span></small></p><div class="mop-wrapper space-bottom"><p>YP Dine Android</p>
+</div><ul><li class="mop-wrapper"><p>Strong knowledge of Android SDK, different versions of Android, and how to deal with different screen sizes</p>
+</li><li class="mop-wrapper"><p>Familiarity with RESTful APIs to connect Android applications to back-end services</p>
+</li><li class="mop-wrapper"><p>Strong knowledge of Android UI design principles, patterns, and best practices</p>
+</li><li class="mop-wrapper"><p>Experience with offline storage, threading, and performance tuning</p>
+</li><li class="mop-wrapper"><p>Ability to design applications around natural user interfaces, such as “touch”</p>
+</li><li class="mop-wrapper"><p>Familiarity with the use of additional sensors, such as gyroscopes and accelerometers</p>
+</li><li class="mop-wrapper"><p>Knowledge of the open-source Android ecosystem and the libraries available for common tasks</p>
+</li><li class="mop-wrapper"><p>Ability to understand business requirements and translate them into technical requirements</p>
+</li><li class="mop-wrapper"><p>Familiarity with cloud message APIs and push notifications</p>
+</li><li class="mop-wrapper"><p>A knack for benchmarking and optimization</p>
+</li><li class="mop-wrapper"><p>Understanding of Google’s Android design principles and interface guidelines</p>
 </li><li class="mop-wrapper"><p>Continuous Integration expertise</p>
 </li><li class="mop-wrapper"><p>Mentored junior Developer</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>CTO</strong>,&nbsp;<a href="https://brumelance.herokuapp.com" target="_blank">Brume Lance</a></p><p class="text-muted"><small><span class="space-right">Oct, 2015 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>Custom CMS to manage LARP events. Transform a rulebook into a Web App.</p>
-</div><ul><li class="mop-wrapper"><p>Full stack dev.</p>
-</li><li class="mop-wrapper"><p>DevOps</p>
-</li><li class="mop-wrapper"><p>Designer</p>
-</li><li class="mop-wrapper"><p>System Architecture</p>
-</li><li class="mop-wrapper"><p>Cost planning</p>
-</li><li class="mop-wrapper"><p>On site deployment and maintenance</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Technology Developer</strong>,&nbsp;<a href="http://wherecloud.com" target="_blank">Wherecloud Inc</a></p><p class="text-muted"><small><span class="space-right">Jun, 2014 - Apr, 2015</span><span><i class="icon-clock mr-5"></i>10 months</span></small></p><div class="mop-wrapper space-bottom"><p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">Jun, 2014 - Apr, 2015</span><span><i class="icon-clock mr-5"></i>10 months</span></small></p><div class="mop-wrapper space-bottom"><p>WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.</p>
 </div><ul><li class="mop-wrapper"><p>Participate in team meetings to oversee the advancement of projects</p>
 </li><li class="mop-wrapper"><p>Review, prioritize and execute development tasks in an independent manner</p>
 </li><li class="mop-wrapper"><p>Guide the other members of the team in their work and support them on a day-to-day basis, helping to problem solve any challenges that may arise</p>
@@ -997,23 +1060,83 @@ body {
 </li><li class="mop-wrapper"><p>Maintain and update Android Apps on the Google Play Store.</p>
 </li><li class="mop-wrapper"><p>Maintain and update Web Apps.</p>
 </li><li class="mop-wrapper"><p>Continuous Integration expertise</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;<a href="http://www.solutionsmedias360.com/" target="_blank">Solutions Medias 360</a></p><p class="text-muted"><small><span class="space-right">May, 2013 - Sep, 2013</span><span><i class="icon-clock mr-5"></i>4 months</span></small></p><div class="mop-wrapper space-bottom"><p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">May, 2013 - Sep, 2013</span><span><i class="icon-clock mr-5"></i>4 months</span></small></p><div class="mop-wrapper space-bottom"><p>The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.</p>
 </div><ul><li class="mop-wrapper"><p>Participate in the creation new Android Apps.</p>
 </li><li class="mop-wrapper"><p>Write test for web services</p>
 </li><li class="mop-wrapper"><p>Maintain and update Android Apps on the Google Play Store.</p>
 </li><li class="mop-wrapper"><p>Maintain and update Web Apps.</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;<a href="http://www.Quattriuum.com/" target="_blank">Quattriuum</a></p><p class="text-muted"><small><span class="space-right">May, 2012 - May, 2013</span><span><i class="icon-clock mr-5"></i>1 year</span></small></p><div class="mop-wrapper space-bottom"><p>Quattriuum specializes in motion tracking and analysis.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Mobile Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">May, 2012 - May, 2013</span><span><i class="icon-clock mr-5"></i>1 year</span></small></p><div class="mop-wrapper space-bottom"><p>Quattriuum specializes in motion tracking and analysis.</p>
 </div><ul><li class="mop-wrapper"><p>Participate in the creation of the FWD Powershot, to measure hockyers performance.</p>
 </li><li class="mop-wrapper"><p>Create software to record, visualize and extract raw sensor data.</p>
 </li><li class="mop-wrapper"><p>Integrate cloud technologies and services</p>
 </li><li class="mop-wrapper"><p>Android bluetooth communication</p>
 </li><li class="mop-wrapper"><p>Provide tech. support for new prototypes</p>
 </li><li class="mop-wrapper"><p>Create software documentation</p>
-</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Web Development</strong><div class="space-top labels"><span class="label label-keyword">HTML5</span><span class="label label-keyword">CSS3</span><span class="label label-keyword">Babel</span><span class="label label-keyword">ES6</span><span class="label label-keyword">NodeJS</span><span class="label label-keyword">Ruby</span><span class="label label-keyword">Python</span><span class="label label-keyword">Rails</span><span class="label label-keyword">Heroku</span><span class="label label-keyword">IoT</span><span class="label label-keyword">CoffeScript</span><span class="label label-keyword">React</span><span class="label label-keyword">React Native</span><span class="label label-keyword">AWS</span><span class="label label-keyword">S3</span><span class="label label-keyword">Redis</span><span class="label label-keyword">Google Cloud Platform</span><span class="label label-keyword">PostgreSQL</span><span class="label label-keyword">MySQL</span><span class="label label-keyword">Firebase</span><span class="label label-keyword">Firestore</span><span class="label label-keyword">Bower</span><span class="label label-keyword">PWA</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Android</strong><div class="space-top labels"><span class="label label-keyword">Java 1.8</span><span class="label label-keyword">Android Studio</span><span class="label label-keyword">Android Things</span><span class="label label-keyword">Android TV</span><span class="label label-keyword">Gradle</span><span class="label label-keyword">Espresso</span><span class="label label-keyword">Firebase</span><span class="label label-keyword">NoSQL</span><span class="label label-keyword">Instant Apps</span><span class="label label-keyword">BlueTooth</span><span class="label label-keyword">Flutter</span><span class="label label-keyword">Google Glass</span><span class="label label-keyword">Daydream</span><span class="label label-keyword">Kotlin</span><span class="label label-keyword">WearOS</span><span class="label label-keyword">Google I/O 2014</span><span class="label label-keyword">Google I/O 2016</span><span class="label label-keyword">Google I/O 2017</span><span class="label label-keyword">Google I/O 2018</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>iOS</strong><div class="space-top labels"><span class="label label-keyword">Willing to learn</span><span class="label label-keyword">Swift</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Software Engineering, Bachelor,&nbsp;</strong>School of Superior Technology</p><p class="text-muted clear-margin"><small>Sep, 2010 - May, 2015</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Information Systems, Collegiate,&nbsp;</strong>Cegep de St-Hyacinthe</p><p class="text-muted clear-margin"><small>Sep, 2006 - Sep, 2010</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="awards"><div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div><div class="info"><h4 class="title text-uppercase">Awards</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>2nd Place, Coveo Blitz 2014 </strong>Coveo Inc</p><p class="text-muted"><small>Awarded on: Jan 11, 2014</small></p><div class="mop-wrapper"><p>24h Developer Contest.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>5th Place, CS Games 2013 </strong>CS Games</p><p class="text-muted"><small>Awarded on: Mar 23, 2013</small></p><div class="mop-wrapper"><p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing.</p>
-</div></div></li></ul></div></div></div><div class="detail" id="volunteer-work"><div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div><div class="info"><h4 class="title text-uppercase">Volunteer Work</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Volunteering" data-placement="left"></i><strong>Speaker, Co-Organizer, </strong><a href="http://android-montreal.com/" target="_blank">GDG Montreal Android</a></p><p class="text-muted"><small>Apr, 2017 - Present</small></p><div class="mop-wrapper"><p>Organise, present, teach and promote Android development.</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="projects-experience"><div class="icon"><i class="fs-lg icon-code"></i><span class="mobile-title">Projects Experience</span></div><div class="info"><h4 class="title text-uppercase">Projects Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><a href="https://www.elazar.ca/" target="_blank"><strong>Vampire The Mascarade CMS</strong></a><span>,&nbsp;Le Projet</span></p><p class="text-muted"><small><span class="space-right">Jan, 2022 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>Vampire The Mascarade web application</p>
+</div></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><a href="https://www.brumelance.com/" target="_blank"><strong>Brumelance - LARP CMS</strong></a><span>,&nbsp;Brumelance</span></p><p class="text-muted"><small><span class="space-right">Oct, 2015 - Oct, 2018</span><span><i class="icon-clock mr-5"></i>3 years</span></small></p><div class="mop-wrapper space-bottom"><p>Custom CMS to manage LARP events. Transform a rulebook into a Web App.</p>
+</div></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Web Development</strong><div class="space-top labels"><span class="label label-keyword"><p>HTML5</p>
+</span><span class="label label-keyword"><p>CSS3</p>
+</span><span class="label label-keyword"><p>ES6</p>
+</span><span class="label label-keyword"><p>Babel</p>
+</span><span class="label label-keyword"><p>esbuild</p>
+</span><span class="label label-keyword"><p>NodeJS</p>
+</span><span class="label label-keyword"><p>Ruby on Rails</p>
+</span><span class="label label-keyword"><p>Django</p>
+</span><span class="label label-keyword"><p>CoffeeScript</p>
+</span><span class="label label-keyword"><p>React</p>
+</span><span class="label label-keyword"><p>React Native</p>
+</span><span class="label label-keyword"><p>SQL</p>
+</span><span class="label label-keyword"><p>NOSQL</p>
+</span><span class="label label-keyword"><p>REST API</p>
+</span><span class="label label-keyword"><p>GraphQL</p>
+</span><span class="label label-keyword"><p>Bower</p>
+</span><span class="label label-keyword"><p>PWA</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Cloud Computing</strong><div class="space-top labels"><span class="label label-keyword"><p>Docker</p>
+</span><span class="label label-keyword"><p>AWS</p>
+</span><span class="label label-keyword"><p>AWS - S3</p>
+</span><span class="label label-keyword"><p>AWS - Route53</p>
+</span><span class="label label-keyword"><p>AWS - EC2</p>
+</span><span class="label label-keyword"><p>Heroku</p>
+</span><span class="label label-keyword"><p>Heroku Dyno</p>
+</span><span class="label label-keyword"><p>Heroku Postgres</p>
+</span><span class="label label-keyword"><p>Heroku REDIS</p>
+</span><span class="label label-keyword"><p>Google Cloud Platform</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Android</strong><div class="space-top labels"><span class="label label-keyword"><p>Java 1.8</p>
+</span><span class="label label-keyword"><p>Kotlin</p>
+</span><span class="label label-keyword"><p>Flutter</p>
+</span><span class="label label-keyword"><p>Android Studio</p>
+</span><span class="label label-keyword"><p>Android Things</p>
+</span><span class="label label-keyword"><p>Android TV</p>
+</span><span class="label label-keyword"><p>Gradle</p>
+</span><span class="label label-keyword"><p>Firebase</p>
+</span><span class="label label-keyword"><p>NoSQL</p>
+</span><span class="label label-keyword"><p>Instant Apps</p>
+</span><span class="label label-keyword"><p>BlueTooth</p>
+</span><span class="label label-keyword"><p>Google Glass</p>
+</span><span class="label label-keyword"><p>Daydream</p>
+</span><span class="label label-keyword"><p>WearOS</p>
+</span><span class="label label-keyword"><p>Google I/O 2014</p>
+</span><span class="label label-keyword"><p>Google I/O 2016</p>
+</span><span class="label label-keyword"><p>Google I/O 2017</p>
+</span><span class="label label-keyword"><p>Google I/O 2018</p>
+</span><span class="label label-keyword"><p>Google I/O 2019</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Beginner" data-placement="left"><div class="skill-progress beginner"></div></div><div class="skill-info"><strong>iOS</strong><div class="space-top labels"><span class="label label-keyword"><p>Willing to learn</p>
+</span><span class="label label-keyword"><p>Swift</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Beginner" data-placement="left"><div class="skill-progress beginner"></div></div><div class="skill-info"><strong>Game Dev</strong><div class="space-top labels"><span class="label label-keyword"><p>C#</p>
+</span><span class="label label-keyword"><p>Unity</p>
+</span><span class="label label-keyword"><p>Unreal Engine</p>
+</span><span class="label label-keyword"><p>Blender</p>
+</span><span class="label label-keyword"><p>3D Modelling</p>
+</span><span class="label label-keyword"><p>3D Rendering</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Beginner" data-placement="left"><div class="skill-progress beginner"></div></div><div class="skill-info"><strong>Embedded</strong><div class="space-top labels"><span class="label label-keyword"><p>Arduino</p>
+</span><span class="label label-keyword"><p>ESP32</p>
+</span><span class="label label-keyword"><p>Soldering</p>
+</span><span class="label label-keyword"><p>C++</p>
+</span><span class="label label-keyword"><p>IoT</p>
+</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Software Engineering, Bachelor,&nbsp;</strong>École de Technologie Supérieure</p><p class="text-muted clear-margin"><small>Sep, 2010 - May, 2015</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Information Systems, Collegiate,&nbsp;</strong>Cegep de St-Hyacinthe</p><p class="text-muted clear-margin"><small>Sep, 2006 - Sep, 2010</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="awards"><div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div><div class="info"><h4 class="title text-uppercase">Awards</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>2nd Place, Coveo Blitz 2014 </strong>,&nbsp;Coveo Inc</p><p class="text-muted"><small>Awarded on: Jan 11, 2014</small></p><div class="mop-wrapper"><p>24h Developer Contest.</p>
+</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>5th Place, CS Games 2013 </strong>,&nbsp;CS Games</p><p class="text-muted"><small>Awarded on: Mar 23, 2013</small></p><div class="mop-wrapper"><p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing.</p>
+</div></div></li></ul></div></div></div><div class="detail" id="volunteer-work"><div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div><div class="info"><h4 class="title text-uppercase">Volunteer Work</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Volunteering" data-placement="left"></i><strong>Speaker, Co-Organizer, </strong><a href="https://android-montreal.com/" target="_blank">GDG Montreal Android</a></p><p class="text-muted"><small>Apr, 2017 - Present</small></p><div class="mop-wrapper"><p>Organise, present, teach and promote Android development.</p>
 </div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>President, </strong><a href="http://clubapplets.ca/" target="_blank">ApplETS, mobile engineering</a></p><p class="text-muted"><small>May, 2013 - May, 2014</small></p><div class="mop-wrapper"><p>Organise a group of student in software engineering, to design, develop and distribute modile apps on a variety of mobile plateforms.</p>
-</div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Volunteering" data-placement="left"></i><strong>IT Elf, </strong><a href="http://brumelance.com/" target="_blank">Brumelance - LARP Events</a></p><p class="text-muted"><small>Jan, 2016 - Present</small></p><div class="mop-wrapper"><p>IT in the woods. Come, we have wifi (almost)!</p>
 </div></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>VP Promo, </strong><a href="http://csgames.org/" target="_blank">CS Games</a></p><p class="text-muted"><small>Jan, 2014 - Mar, 2013</small></p><div class="mop-wrapper"><p>The Computer Science Games are a collegiate competition that includes challenges from all aspects of computing. The Games are a weekend long thrill ride with logic puzzles, difficult algorithms, intense video game competitions, social activities, and of course, programming. Organized by students from different university every year, the CS Games is open to all undergraduate students. Teams are composed from 7 to 10 skilled people, each participating in multiple simultaneous challenges.</p>
 </div></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
   var toggleFloatingMenu = function() {
