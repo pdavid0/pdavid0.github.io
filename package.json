@@ -1,17 +1,18 @@
 {
   "name": "pdavid0-resume",
   "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "build": "npm run build-index && npm run build-png",
+    "build": "resume export index.html --theme elegant",
     "build-pdf": "./bin/wkhtmltopdf --viewport-size 1920x1080 --page-size A4 -T 0 -B 0 -L 0 -R 0 index.html resume.pdf",
     "build-png": "./bin/wkhtmltoimage --format png --width 1280 index.html resume.png",
-    "build-index": "resume export index.html --theme spartan",
-    "deploy": "npm run build-index && git commit -am 'update' && git push"
+    "deploy": "npm run build && git commit -am 'update' && git push"
   },
   "devDependencies": {
-    "resume-cli": "^0.4.11"
+    "resume-cli": "^3.0.7"
   },
   "dependencies": {
-    "resume": "0.0.1"
+    "resume": "0.0.1",
+    "jsonresume-theme-elegant": "^1.16.1"
   }
 }

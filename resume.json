@@ -5,11 +5,11 @@
     "url": "http://pdavid0.github.io",
     "summary": "Creative, Curious, Dreamer, Ingenious.",
     "location": {
-      "address": "Quebec City",
+      "address": "",
       "postalCode": "",
-      "city": "Quebec",
-      "countryCode": "CA",
-      "region": "Quebec"
+      "city": "Quebec City",
+      "countryCode": "Canada",
+      "region": ""
     },
     "profiles": [
       {
@@ -26,30 +26,30 @@
   },
   "work": [
     {
-      "company": "Bus.com",
+      "name": "Bus.com",
       "position": "Software Development Manager",
-      "website": "https://www.bus.com",
+      "url": "https://www.bus.com",
       "app": "https://www.bus.com",
       "startDate": "2019-04-27",
-      "endDate": "2022-07-01",
-      "summary": "FullStack, Mobile, DevOps.",
+      "summary": "Great managers keep their team engaged, high performing and retained.",
       "highlights": [
         "Developing, troubleshooting, analyzing, and testing software programs",
         "Assisting in the documentation of requirements",
         "Managing primary web development vendors",
-        "Providing training to new hires",
-        "Create operational manuals for users, clients, and team members",
         "Presenting ideas for development and improvement of the company’s product",
         "Assisting in the development of software applications",
         "Determine the scope and expectation of software development projects",
+        "Onboard new hires and train them to the company’s standards",
+        "IT Administration",
+        "Providing training to new hires",
+        "Create operational manuals for users, clients, and team members",
         "Knowledge of Agile development methodologies",
         "Strong organization and time-management skills",
         "Strong verbal and written communication skills",
-        "Keen attention to detail",
         "Ability to analyze problems and find solutions",
         "Collaborate with marketing teams, as well as direct partners in product, insights, and design to uncover the next growth opportunity within owned and new features",
         "Lead and manage a team of mobile, web and backend engineers through hiring, coaching, mentoring, feedback, and hands-on career development",
-        "Grow a healthy, collaborative engineering culture in line with our Spotify values and build technical expertise amongst the team",
+        "Grow a healthy, collaborative engineering culture in line with our organisation values and build technical expertise amongst the team",
         "Effectively facilitate and bridge collaboration with cross-discipline partners to solve exciting and high-reaching problems",
         "Drive forward technical initiatives within your team, and look to introduce new opportunities by way of A/B testing",
         "Ensure the team has an established tech strategy and prioritization of tech excellence",
@@ -57,12 +57,12 @@
       ]
     },
     {
-      "company": "Bus.com",
+      "name": "Bus.com",
       "position": "Lead Software Engineer",
-      "website": "https://www.bus.com",
+      "url": "https://www.bus.com",
       "app": "https://www.bus.com",
       "startDate": "2017-04-27",
-      "summary": "FullStack, React, Redux, React Native, DevOps.",
+      "summary": "FullStack, React, Redux, REST API, React Native, DevOps.",
       "highlights": [
         "Leads teams of 2-4 people that develop, test, and fix defects in application software.",
         "Prepare work estimates and project schedules for all technical work for the projects within the team.",
@@ -75,14 +75,16 @@
         "Lead the mobile software development project",
         "Mentored junior Developer on their careers and technical abilities",
         "Maintain and update FullStack Web Apps",
+        "Maintain and update React Native Apps",
+        "Maintain and update REST API",
         "Continuous Integration (CI)",
         "Continuous Distribution (CD)"
       ]
     },
     {
-      "company": "Yellow Pages Group",
+      "name": "Yellow Pages Group",
       "position": "Senior Android Developer",
-      "website": "https://play.google.com/store/apps/details?id=com.ypg.dine&hl=fr_CA",
+      "url": "https://www.pagesjaunes.ca/resto/loc/montreal-qc",
       "startDate": "2015-04-27",
       "endDate": "2017-04-27",
       "summary": "YP Dine Android",
@@ -103,11 +105,10 @@
       ]
     },
     {
-      "company": "Wherecloud Inc",
+      "name": "Wherecloud",
       "position": "Mobile Developer",
-      "website": "http://wherecloud.com",
-      "startDate": "2014-06-16",
-      "endDate": "2015-04-27",
+      "startDate": "2014-04-16",
+      "endDate": "2015-06-27",
       "summary": "WhereCloud specializes in creating iPhone, iPad and Google Android apps that are state-of-the-art, user oriented and easy to use. Its products have been downloaded by more than 3 million users and have been included multiple times in the Apple App Store’s “Featured Apps” section.",
       "highlights": [
         "Participate in team meetings to oversee the advancement of projects",
@@ -122,9 +123,9 @@
       ]
     },
     {
-      "company": "Solutions Medias 360",
+      "name": "Solutions Medias 360",
       "position": "Mobile Developer",
-      "website": "http://www.solutionsmedias360.com/",
+      "url": "https://360.agency/en/",
       "startDate": "2013-05-01",
       "endDate": "2013-09-01",
       "summary": "The emergence of mobility offers an infinite range of possibilities, both in marketing and communication. The proximity facilitated by mobile technologies between a company and its customers allows the company to, in some way, be part of their lives.",
@@ -136,9 +137,9 @@
       ]
     },
     {
-      "company": "Quattriuum",
+      "name": "Quattriuum",
       "position": "Mobile Developer",
-      "website": "http://www.Quattriuum.com/",
+      "url": "https://www.fitness-gaming.com/profiles/company/quattriuum.html",
       "startDate": "2012-05-01",
       "endDate": "2013-05-01",
       "summary": "Quattriuum specializes in motion tracking and analysis.",
@@ -180,6 +181,7 @@
   "education": [
     {
       "institution": "École de Technologie Supérieure",
+      "url": "https://www.etsmtl.ca/etudes/premier-cycle/Baccalaureat-genie-logiciel",
       "area": "Software Engineering",
       "studyType": "Bachelor",
       "startDate": "2010-09-01",
@@ -187,6 +189,7 @@
     },
     {
       "institution": "Cegep de St-Hyacinthe",
+      "url": "https://www.cegepsth.qc.ca/programme/techniques-de-linformatique-developpement-de-logiciels/",
       "area": "Information Systems",
       "studyType": "Collegiate",
       "startDate": "2006-09-01",
@@ -226,6 +229,8 @@
         "SQL",
         "NOSQL",
         "REST API",
+        "NGINX",
+        "APACHE",
         "GraphQL",
         "Bower",
         "PWA"
@@ -351,7 +356,7 @@
     },
     {
       "language": "French",
-      "fluency": "Langue maternelle"
+      "fluency": "Native speaker"
     }
   ]
 }
