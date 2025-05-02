@@ -9,10 +9,11 @@
     "deploy": "npm run build && git commit -am 'update' && git push"
   },
   "devDependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
     "resume-cli": "^3.0.7"
   },
-  "dependencies": {
-    "resume": "0.0.1",
-    "jsonresume-theme-elegant": "^1.16.1"
-  }
+  "resolutions": {
+    "puppeteer": "19.7.5"
+  },
+  "packageManager": "yarn@4.9.1"
 }

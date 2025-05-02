@@ -26,6 +26,37 @@
   },
   "work": [
     {
+      "name": "Inspectify",
+      "position": "Staff Software Engineer",
+      "url": "https://www.inspectify.com",
+      "app": "https://www.inspectify.com",
+      "startDate": "2022-07-27",
+      "summary": "Great managers keep their team engaged, high performing and retained.",
+      "highlights": [
+        "Developing, troubleshooting, analyzing, and testing software programs",
+        "Assisting in the documentation of requirements",
+        "Managing primary web development vendors",
+        "Presenting ideas for development and improvement of the company’s product",
+        "Assisting in the development of software applications",
+        "Determine the scope and expectation of software development projects",
+        "Onboard new hires and train them to the company’s standards",
+        "IT Administration",
+        "Providing training to new hires",
+        "Create operational manuals for users, clients, and team members",
+        "Knowledge of Agile development methodologies",
+        "Strong organization and time-management skills",
+        "Strong verbal and written communication skills",
+        "Ability to analyze problems and find solutions",
+        "Collaborate with marketing teams, as well as direct partners in product, insights, and design to uncover the next growth opportunity within owned and new features",
+        "Lead and manage a team of mobile, web and backend engineers through hiring, coaching, mentoring, feedback, and hands-on career development",
+        "Grow a healthy, collaborative engineering culture in line with our organisation values and build technical expertise amongst the team",
+        "Effectively facilitate and bridge collaboration with cross-discipline partners to solve exciting and high-reaching problems",
+        "Drive forward technical initiatives within your team, and look to introduce new opportunities by way of A/B testing",
+        "Ensure the team has an established tech strategy and prioritization of tech excellence",
+        "Cultivate agile methodologies and champion a culture of sustainable tech health"
+      ]
+    },
+    {
       "name": "Bus.com",
       "position": "Software Development Manager",
       "url": "https://www.bus.com",
@@ -154,6 +185,13 @@
     }
   ],
   "volunteer": [
+    {
+      "organization": "Les Productions Paul-Poulet",
+      "position": "President, Tresurer",
+      "website": "",
+      "startDate": "2022-04-01",
+      "summary": "Organise events with Live Action Role Playing game elements."
+    },
     {
       "organization": "GDG Montreal Android",
       "position": "Speaker, Co-Organizer",
@@ -289,6 +327,7 @@
       "name": "Game Dev",
       "level": "Beginner",
       "keywords": [
+        "lua", "love2D",
         "C#",
         "Unity",
         "Unreal Engine",
@@ -306,6 +345,15 @@
         "Soldering",
         "C++",
         "IoT"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "Intermediate",
+      "keywords": [
+        "UNIX",
+        "Docker",
+        "Arch"
       ]
     }
   ],
